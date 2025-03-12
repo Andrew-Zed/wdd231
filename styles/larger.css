@@ -1,0 +1,85 @@
+@media (min-width: 768px) {
+    /* Header Styles */
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    header img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    header span {
+        font-size: 2rem;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: #000;
+    }
+
+    #main-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #main-nav li a {
+        border-right: 1px solid #333;
+    }
+
+    #main-nav li:last-child a{
+        border-right: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "course-work location" "certificate certificate";
+    }
+
+    .course-work {
+        grid-area: course-work;
+    }
+
+    .location {
+        grid-area: location;
+    }
+    
+    .certificate {
+        grid-area: certificate;
+    }
+
+        /* Course Grid */
+    .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+}
+
+/* Media query for extra large screens */
+@media (min-width: 1024px) {
+    /* Main Content */
+    main {
+        padding: 2rem;
+    }
+
+    /* Course Grid */
+    .courses-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+}

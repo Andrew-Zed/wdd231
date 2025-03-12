@@ -1,0 +1,234 @@
+/* Base styles for small screens */
+
+/* Global Styles */
+:root {
+    --primary-color: #2c4b6c;    /* Dark blue */
+    --secondary-color: #703f2a;  /* Brown for completed courses */
+    --accent-color: #e0e0e0;     /* Light gray */
+    --text-dark: #333;
+    --text-light: #fff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    margin-top: 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.75rem;
+    margin: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4a78af;
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    position: relative;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #000;
+}
+
+#main-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+}
+
+#main-nav.open {
+    display: flex;
+}
+
+#main-nav li a {
+    display: block;
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+#main-nav li a:hover {
+    background-color: #333;
+    text-decoration: none;
+}
+
+#main-nav li a.active {
+    background-color: #555;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
+
+section ul {
+    padding: 1rem 2rem;
+}
+
+section figure {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+section figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+/* Certificate Section */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.filter-buttons button {
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #333;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0 1rem 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    background-color: var(--accent-color);
+    transition: transform 0.3s;
+}
+
+.certificate p {
+    padding-left: 20px; /* Adjust the value as needed */
+}
+
+.course-card:hover {
+    transform: translateY(-3px);
+}
+
+.completed {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+#total-credits {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

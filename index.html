@@ -2,21 +2,94 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="WDD 231 - Web Frontend Development I - Andrew C. Awadike"
-    />
-    <meta name="author" content="Andrew C. Awadike" />
-    <title>WDD 231 - Web Frontend Development I - Andrew C. Awadike</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/base.css" />
-    <script src="scripts/" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page for Web Development">
+    <meta name="author" content="Andrew C. Awadike">
+
+    <title>WDD 231 - Web Frontend Development I - Home Page</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript Files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
   </head>
-  <body></body>
+  <body>
+    <header>
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Student Profile Photo" width="100" height="100">
+            <span>Andrew Chigozie Awadike</span>
+            <button id="menu-button" aria-label="Navigation Menu">&#9776;</button>
+        </div>
+        <nav>
+
+            <ul id="main-nav>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#" target="_blank">GitHub Profile</a></li>
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <h1>Home</h1>
+        
+        <div class="grid-container">
+
+            <section>
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Learning Activity 1</li>
+                    <li>Learning Activity 2</li>
+                    <li>Learning Activity 3</li>
+                </ul>
+            </section>
+    
+            <section class="location">
+                <h2>Lagos Nigeria</h2>
+                <img src="images/nigeria-sm.png" alt="Scenic view of your Nigeria" width="300" height="225">
+                <figcaption>Caption of Nigeria</figcaption>
+            </section>
+    
+            <section class="certificate">
+                <h2>Web and Computer Programming Certificate</h2>
+    
+                <div class="filter-buttons">
+                    <button id="all-btn">All</button>
+                    <button id="cse-btn">CSE</button>
+                    <button id="wdd-btn">WDD</button>
+                </div>
+    
+                <div id="course-container" class="courses-grid">
+    
+                </div>
+    
+                <p>Total Credits Required: <span id="total-credits">0</span></p>
+            </section>
+    
+
+
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p>
+          ©<span id="currentyear">2025</span>🌺 Andrew Chigozie Awadike 🌺 Nigeria
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+  </body>
 </html>
