@@ -1,31 +1,33 @@
+/* Larger screen styles (tablet and desktop) */
+
 @media (min-width: 768px) {
     /* Header Styles */
     header {
-        padding: 1rem 2rem;
+        flex-direction: column; /* Keep column layout for larger screens too */
     }
     
-    header img {
+    .profile-container {
+        padding: 1.5rem 2rem;
+        justify-content: center;
+    }
+    
+    .profile-container img {
         width: 80px;
         height: 80px;
     }
     
-    header span {
+    .name {
         font-size: 2rem;
     }
 
     #menu-button {
-        display: none;
+        display: none; /* Hide menu button on larger screens */
     }
 
     /* Navigation */
-    nav {
-        background-color: #000;
-    }
-
     #main-nav {
-        display: flex;
+        display: flex !important; /* Always show nav on desktop */
         flex-direction: row;
-        justify-content: space-around;
     }
 
     #main-nav li {
@@ -34,15 +36,29 @@
 
     #main-nav li a {
         border-right: 1px solid #333;
+        padding: 0.75rem 0;
     }
 
-    #main-nav li:last-child a{
+    #main-nav li:last-child a {
         border-right: none;
     }
 
+    /* Main layout */
+    main {
+        padding: 0 2rem 2rem;
+    }
+
+    .page-title {
+        padding: 1.5rem 0 1rem;
+        font-size: 2rem;
+    }
+
+    /* Grid layout for two columns */
     .grid-container {
         grid-template-columns: 1fr 1fr;
-        grid-template-areas: "course-work location" "certificate certificate";
+        grid-template-areas: 
+            "course-work location"
+            "certificate certificate";
     }
 
     .course-work {
@@ -57,10 +73,34 @@
         grid-area: certificate;
     }
 
-        /* Course Grid */
+    /* Course Grid */
     .courses-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+    }
+
+    .footer-content p {
+        margin: 5px 0; /* Add space between elements */
+    }
+
+    .footer-content img.flag {
+        width: 20px; /* Adjust flag size */
+        height: auto;
+        margin-left: 5px;
     }
 }
 
@@ -68,18 +108,13 @@
 @media (min-width: 1024px) {
     /* Main Content */
     main {
-        padding: 2rem;
+        padding: 0 2.5rem 2.5rem;
     }
 
-    /* Course Grid */
-    .courses-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    /* Course Grid - already handled in the 768px media query */
 
     /* Footer */
     footer {
-        display: flex;
-        justify-content: center;
-        padding: 1rem 2rem;
+        padding: 1rem 2.5rem;
     }
 }

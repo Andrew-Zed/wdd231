@@ -1,4 +1,4 @@
-/* Base styles for small screens */
+/* Base styles for small screens (Mobile First) */
 
 /* Global Styles */
 :root {
@@ -14,6 +14,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -29,13 +31,16 @@ body {
 /* Typography */
 h1, h2, h3 {
     font-family: var(--font-heading);
-    margin-top: 0;
 }
 
-h1 {
-    color: var(--primary-color);
-    text-align: center;
-    padding: 1rem 0;
+/* Page title - moved outside of sections */
+.page-title {
+    color: var(--text-dark);
+    padding: 1rem 0 0.5rem;
+    font-size: 1.75rem;
+    font-weight: normal;
+    background-color: transparent;
+    margin-left: 0.5rem;
 }
 
 h2 {
@@ -44,31 +49,38 @@ h2 {
     padding: 0.75rem;
     margin: 0;
     border-radius: 5px 5px 0 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--text-light);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #4a78af;
-    text-decoration: underline;
+    color: #ccc;
 }
 
-/* Header Styles */
+/* Header Styles - Updated to match design */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     background-color: var(--primary-color);
     color: var(--text-light);
+}
+
+/* Profile container - photo and name */
+.profile-container {
+    display: flex;
+    align-items: center;
     padding: 1rem;
     position: relative;
 }
 
-header img {
+.profile-container img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -76,12 +88,14 @@ header img {
     margin-right: 1rem;
 }
 
-header span {
+.name {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: var(--font-heading);
+    margin: 0;
 }
 
+/* Menu button for mobile */
 #menu-button {
     background: none;
     border: none;
@@ -89,19 +103,23 @@ header span {
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* Navigation */
-nav {
+#main-nav-container {
     background-color: #000;
+    width: 100%;
 }
 
 #main-nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     display: none;
     flex-direction: column;
+    width: 100%;
 }
 
 #main-nav.open {
@@ -119,7 +137,6 @@ nav {
 
 #main-nav li a:hover {
     background-color: #333;
-    text-decoration: none;
 }
 
 #main-nav li a.active {
@@ -129,7 +146,7 @@ nav {
 
 /* Main Content */
 main {
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .grid-container {
@@ -178,10 +195,12 @@ section figcaption {
     background-color: #000;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
+    flex: 1;
+    max-width: 100px;
 }
 
 .filter-buttons button:hover {
@@ -196,15 +215,12 @@ section figcaption {
 }
 
 .course-card {
-    padding: 1rem;
-    border-radius: 5px;
+    padding: 0.75rem;
+    border-radius: 3px;
     text-align: center;
     background-color: var(--accent-color);
     transition: transform 0.3s;
-}
-
-.certificate p {
-    padding-left: 20px; /* Adjust the value as needed */
+    font-weight: bold;
 }
 
 .course-card:hover {
@@ -214,6 +230,11 @@ section figcaption {
 .completed {
     background-color: var(--secondary-color);
     color: var(--text-light);
+}
+
+.certificate p {
+    padding: 0 1rem 1rem;
+    text-align: left;
 }
 
 #total-credits {
@@ -229,6 +250,21 @@ footer {
     margin-top: 1rem;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flag {
+    width: 24px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
 footer p {
-    margin: 0.5rem 0;
+    margin: 0;
+    font-size: 0.9rem;
 }
