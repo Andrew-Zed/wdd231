@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function() {
             code: "CSE 110",
             name: "Programming Building Blocks",
             credits: 3,
-            completed: false
+            completed: true
         },
         {
             code: "CSE 111",
             name: "Programming with Functions",
             credits: 3,
-            completed: false
+            completed: true
         },
         {
             code: "CSE 210",
@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
             code: "WDD 130",
             name: "Web Fundamentals",
             credits: 3,
-            completed: false
+            completed: true
         },
         {
             code: "WDD 131",
             name: "Web Fundamentals Hands-on",
             credits: 1,
-            completed: false
+            completed: true
         },
         {
             code: "WDD 231",
