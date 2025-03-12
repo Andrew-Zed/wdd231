@@ -31,11 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname.split('/').pop();
     
     links.forEach(link => {
-        const href = link.getAttribute('href');
         // Check if this link matches the current page
-        if ((href === currentPage) || 
-            (currentPage === '' && href === 'index.html') ||
-            (currentPage === '' && href === '#')) {
+        if (link.getAttribute('href') === currentPage || 
+            (currentPage === '' && link.getAttribute('href') === 'index.html')) {
             link.classList.add('active');
         }
     });
