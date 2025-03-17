@@ -1,102 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Course Home Page for Web Development">
-    <meta name="author" content="Andrew C. Awadike">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 Course Home Page for Web Development"
+    />
+    <meta name="author" content="Andrew C. Awadike" />
 
-    <title>WDD 231 - Web Frontend Development I - Home Page by Andrew C. Awadike</title>
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="WDD 231 - Web Frontend Development I - Home Page by Andrew C. Awadike"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://andrew-zed.github.io/wdd231/images/nigeria-sm.png"
+    />
+    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/" />
+
+    <title>
+      WDD 231 - Web Frontend Development I - Home Page by Andrew C. Awadike
+    </title>
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- JavaScript Files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
-
   </head>
   <body>
     <!-- Header: Split into a top profile section and a bottom navigation -->
     <header>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Student Profile Photo" width="100" height="100">
-            <h2 class="name">Andrew C. Awadike</h2>
-            <!-- Mobile menu button moved here -->
-            <button id="menu-button" aria-label="Navigation Menu">&#9776;</button>
-        </div>
-        
-        <!-- Navigation in its own separate container -->
-        <nav id="main-nav-container">
-            <ul id="main-nav">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Chamber</a></li>
-                <li><a href="https://github.com/Andrew-Zed" target="_blank">GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/andrew-awadike-661665101/" target="_blank">LinkedIn</a></li>
-            </ul>
-        </nav>
+      <div class="profile-container">
+        <img
+          src="images/profile.jpg"
+          alt="Student Profile Photo"
+          width="60"
+          height="60"
+        />
+        <h2 class="name">Andrew C. Awadike</h2>
+        <!-- Mobile menu button moved here -->
+        <button id="menu-button" aria-label="Navigation Menu">&#9776;</button>
+      </div>
+
+      <!-- Navigation in its own separate container -->
+      <nav id="main-nav-container">
+        <ul id="main-nav">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li>
+            <a href="https://github.com/Andrew-Zed" target="_blank"
+              >GitHub Profile</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/andrew-awadike-661665101/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <!-- Page title moved outside the grid container -->
-        <h1 class="page-title">Home</h1>
-        
-        <div class="grid-container">
-            <!-- Course Work Section -->
-            <section class="course-work">
-                <h2>Course Work</h2>
-                <ul>
-                    <li>Learning Activity 1</li>
-                    <li>Learning Activity 2</li>
-                    <li>Learning Activity 3</li>
-                </ul>
-            </section>
-    
-            <!-- Location Section -->
-            <section class="location">
-                <h2>Lagos Nigeria</h2>
-                <figure>
-                    <img src="images/nigeria-sm.png" alt="Scenic view of your Nigeria" width="300" height="225">
-                    <figcaption>Caption of Nigeria</figcaption>  
-                </figure>
-            </section>
-    
-            <!-- Certificate Section -->
-            <section class="certificate">
-                <h2>Web and Computer Programming Certificate</h2>
-    
-                <div class="filter-buttons">
-                    <button id="all-btn">All</button>
-                    <button id="cse-btn">CSE</button>
-                    <button id="wdd-btn">WDD</button>
-                </div>
-    
-                <div id="course-container" class="courses-grid">
-                    <!-- Course cards will be generated by JavaScript -->
-                </div>
-    
-                <p>Total Credits Required: <span id="total-credits">0</span></p>
-            </section>
-        </div>
+      <!-- Page title moved outside the grid container -->
+      <h1 class="page-title">Home</h1>
+
+      <div class="grid-container">
+        <!-- Course Work Section -->
+        <section class="course-work">
+          <h2>Course Work</h2>
+          <ul>
+            <li>Learning Activity 1</li>
+            <li>Learning Activity 2</li>
+            <li>Learning Activity 3</li>
+          </ul>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location">
+          <h2>Lagos Nigeria</h2>
+          <figure>
+            <img
+              src="images/nigeria-sm.png"
+              alt="Scenic view of your Nigeria"
+              width="100%"
+              height="auto"
+            />
+            <figcaption>Caption of Nigeria</figcaption>
+          </figure>
+        </section>
+
+        <!-- Certificate Section -->
+        <section class="certificate">
+          <h2>Web and Computer Programming Certificate</h2>
+
+          <div class="filter-buttons">
+            <button id="all-btn">All</button>
+            <button id="cse-btn">CSE</button>
+            <button id="wdd-btn">WDD</button>
+          </div>
+
+          <div id="course-container" class="courses-grid">
+            <!-- Course cards will be generated by JavaScript -->
+          </div>
+
+          <p>Total Credits Required: <span id="total-credits">0</span></p>
+        </section>
+      </div>
     </main>
 
     <!-- Footer updated to match the example design -->
     <footer>
-        <div class="footer-content">
-            <p>
-                ©<span id="currentyear">2025</span>⚡ Andrew Chigozie Awadike ⚡ Nigeria
-                <img src="images/nigerian-flag.jpeg" alt="Nigeria Flag" class="flag">
-            </p>
-            <p id="lastModified">Last Update: 03/12/2025 02:03:02</p>
-        </div>
+      <div class="footer-content">
+        <p>
+          ©<span id="currentyear">2025</span>⚡ Andrew Chigozie Awadike ⚡
+          Nigeria
+          <img
+            src="images/nigerian-flag.jpeg"
+            alt="Nigeria Flag"
+            class="flag"
+          />
+        </p>
+        <p id="lastModified">Last Update: 03/12/2025 02:03:02</p>
+      </div>
     </footer>
   </body>
 </html>
