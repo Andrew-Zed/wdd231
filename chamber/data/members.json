@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Sahara Desert Tours",
+      "address": "123 Camel Way, Timbuktu, Mali",
+      "phone": "+223 555-1234",
+      "website": "https://www.saharadesert-tours.com",
+      "image": "tour1.jpg",
+      "membershipLevel": 3,
+      "additionalInfo": "Leading desert excursion company since 1985"
+    },
+    {
+      "name": "Ancient Manuscripts Museum",
+      "address": "45 Heritage Avenue, Timbuktu, Mali",
+      "phone": "+223 555-7890",
+      "website": "https://www.timbuktu-manuscripts.org",
+      "image": "tour2.jpg",
+      "membershipLevel": 2,
+      "additionalInfo": "Home to over 700,000 ancient manuscripts"
+    },
+    {
+      "name": "Timbuktu Spice Market",
+      "address": "78 Trade Route, Timbuktu, Mali",
+      "phone": "+223 555-4321",
+      "website": "https://www.timbuktuspices.com",
+      "image": "tour3.jpg",
+      "membershipLevel": 3,
+      "additionalInfo": "Premium quality spices from across Africa"
+    },
+    {
+      "name": "Sahel Crafts Cooperative",
+      "address": "15 Artisan Lane, Timbuktu, Mali",
+      "phone": "+223 555-5678",
+      "website": "https://www.sahelcrafts.org",
+      "image": "tour4.jpg",
+      "membershipLevel": 1,
+      "additionalInfo": "Supporting local artisans and traditional crafts"
+    },
+    {
+      "name": "Trans-Saharan Trading Company",
+      "address": "230 Caravan Road, Timbuktu, Mali",
+      "phone": "+223 555-8765",
+      "website": "https://www.trans-saharan.com",
+      "image": "tour5.jpg",
+      "membershipLevel": 2,
+      "additionalInfo": "International import-export business"
+    },
+    {
+      "name": "Timbuktu Tech Solutions",
+      "address": "56 Digital Lane, Timbuktu, Mali",
+      "phone": "+223 555-9012",
+      "website": "https://www.timbuktu-tech.com",
+      "image": "tour6.jpg",
+      "membershipLevel": 3,
+      "additionalInfo": "IT services and digital solutions for modern businesses"
+    },
+    {
+      "name": "Mansa Musa Financial Services",
+      "address": "7 Gold Street, Timbuktu, Mali",
+      "phone": "+223 555-3456",
+      "website": "https://www.mansamusa-finance.com",
+      "image": "tour7.jpg",
+      "membershipLevel": 3,
+      "additionalInfo": "Financial planning, loans, and investment services"
+    },
+    {
+      "name": "Desert Oasis Resort & Spa",
+      "address": "100 Palm Avenue, Timbuktu, Mali",
+      "phone": "+223 555-7654",
+      "website": "https://www.desertoasis-resort.com",
+      "image": "tour7.jpg",
+      "membershipLevel": 2,
+      "additionalInfo": "Luxury accommodations with traditional Malian hospitality"
+    },
+    {
+      "name": "Timbuktu Heritage Foundation",
+      "address": "34 Preservation Plaza, Timbuktu, Mali",
+      "phone": "+223 555-8901",
+      "website": "https://www.timbuktuheritage.org",
+      "image": "tour5.jpg",
+      "membershipLevel": 1,
+      "additionalInfo": "Non-profit dedicated to preserving Timbuktu's cultural legacy"
+    }
+  ]
