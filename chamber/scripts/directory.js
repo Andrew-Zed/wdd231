@@ -72,7 +72,7 @@ function displayMembers(members) {
         // Build card content
         card.innerHTML = `
             <div class="card-image">
-                <img src="images/members/${member.image}" alt="${member.name}" loading="lazy">
+                <img src="images/members/${member.image}" alt="${member.name}"  width="300" height="200" loading="eager">
             </div>
             <div class="card-content">
                 <span class="badge ${membershipClass}">${membershipLevel}</span>

@@ -11,6 +11,9 @@
     --max-width: 1200px;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
+    --secondary-color-accessible: #2A628F; /* Darker version of #457B9D for better contrast */
+    --light-color-accessible: #5B8C8E; /* Darker version of #A8DADC for better contrast */
+    --footer-link-color: #FFD166; /* Yellow for footer links */
 }
 
 /* Dark mode variables */
@@ -20,6 +23,8 @@
     --background-color: #121212;
     --text-color: #F1FAEE;
     --light-color: #304968;
+    --secondary-color-accessible: #FFFFFF; /* White text for links in dark mode */
+    --light-color-accessible: #4A70A0; /* Darker version for active nav */
 }
 
 /* Global Styles */
@@ -163,7 +168,8 @@ nav {
 }
 
 #primaryNav .active {
-    background-color: var(--light-color);
+    /* background-color: var(--light-color); */
+    background-color: var(--light-color-accessible);
 }
 
 /* Directory Page Styles */
@@ -282,12 +288,9 @@ nav {
 }
 
 .card-link a {
-    display: inline-block;
-    background-color: var(--secondary-color);
+   background-color: var(--secondary-color-accessible);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius);
-    transition: background-color 0.3s;
+    font-weight: bold;
 }
 
 .card-link a:hover {
@@ -373,6 +376,12 @@ footer {
 
 .footer-contact {
     line-height: 1.6;
+}
+
+.footer-contact a {
+    color: var(--footer-link-color);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .footer-bottom {
