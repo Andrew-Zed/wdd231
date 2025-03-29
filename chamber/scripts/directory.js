@@ -1,5 +1,5 @@
 // Directory page JavaScript
-debugger
+
 // Display modes
 const gridBtn = document.getElementById('gridBtn');
 const listBtn = document.getElementById('listBtn');
