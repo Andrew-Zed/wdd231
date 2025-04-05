@@ -11,8 +11,8 @@
     --max-width: 1200px;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    --secondary-color-accessible: #2A628F; /* Darker version of #457B9D for better contrast */
-    --light-color-accessible: #5B8C8E; /* Darker version of #A8DADC for better contrast */
+    --secondary-color-accessible: #457B9D; /* Darker version of #457B9D for better contrast */
+    --light-color-accessible: #A8DADC; /* Darker version of #A8DADC for better contrast */
     --footer-link-color: #FFD166; /* Yellow for footer links */
 }
 
@@ -194,7 +194,7 @@ nav {
     cursor: pointer;
     border-radius: var(--border-radius);
     font-weight: bold;
-    transition: background-color 0.3;
+    transition: background-color 0.3s;
 }
 
 .view-toggle button.active {
@@ -314,7 +314,7 @@ nav {
     flex-direction: row;
     align-items: center;
     height: auto;
-    padding: 0.5;
+    padding: 0.5rem;
 }
 
 #directory.list .card-image {
