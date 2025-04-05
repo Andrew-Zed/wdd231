@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page of the Timbuktu Chamber of Commerce. Connect with local businesses and explore opportunities in our vibrant community.">
+    <meta name="author" content="Andrew C. Awadike">
+    
+    <!-- Facebook Open Graph meta tags -->
+    <meta property="og:title" content="Timbuktu Chamber of Commerce - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/timbuktu-og-image.jpg">
+    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/chamber/index.html">
+
+    <title>Timbuktu Chamber of Commerce - Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- <link rel="preload" href="styles/chamber.css" as="style"> -->
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-home.css">
+   
+    
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../images/tk_12617834.png" alt="Timbuktu Chamber of Commerce Logo">
+                <div class="site-name">
+                    <h1>Timbuktu</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="../images/icons-facebook-small.png" alt="Facebook">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../images/icons8-twitter-50.png" alt="Twitter">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="../images/icons8-linkedin-48.png" alt="LinkedIn">
+                    </a>
+                </div>
+                <button id="darkModeToggle">🌓</button>
+                <button id="hamburgerBtn">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="primaryNav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="home-main">
+
+        <section class="hero-section">
+            <div class="hero-image">
+                <img src="images/timbuktu-hero-image.jpg" alt="Timbuktu cityscape showing historic buildings and vibrant community">
+            </div>
+            <div class="cta-container">
+                <a href="join.html" class="cta-button">Become a Member</a>
+            </div>
+        </section>
+
+        <div class="main-grid">
+            <!-- Events Section -->
+            <section class="events-section">
+                <h2>Upcoming Events</h2>
+                <div class="event-card">
+                    <h3>Business Networking Breakfast</h3>
+                    <p class="event-date">April 15, 2025 | 7:30 AM</p>
+                    <p>Join us for our monthly networking breakfast at the Grand Hotel. Meet fellow business owners and expand your professional network.</p>
+                </div>
+                <div class="event-card">
+                    <h3>Small Business Workshop</h3>
+                    <p class="event-date">April 22, 2025 | 1:00 PM</p>
+                    <p>Learn effective marketing strategies for small businesses in today's digital landscape.</p>
+                </div>
+                <div class="event-card">
+                    <h3>Annual Trade Fair</h3>
+                    <p class="event-date">May 5-7, 2025 | 9:00 AM - 5:00 PM</p>
+                    <p>Showcase your products and services at our largest yearly event. Register your booth by April 20.</p>
+                </div>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section">
+                <h2>Weather Information</h2>
+                <div id="weather-container">
+                    <div class="current-weather">
+                        <div class="weather-icon">
+                            <img id="weather-icon" src="images/weather-placeholder.png" alt="Weather icon">
+                        </div>
+                        <div class="weather-data">
+                            <p id="temperature">Loading...</p>
+                            <p id="weather-description">Loading weather data</p>
+                            <p id="humidity">Humidity: --</p>
+                            <p id="wind-speed">Wind: -- mph</p>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <h3>3-Day Forecast</h3>
+                        <div id="forecast-container">
+                            <p>Loading forecast data...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Spotlights Section -->
+            <section class="spotlights-section">
+                <h2>Business Spotlights</h2>
+                <div id="spotlights-container">
+                    <!-- Business spotlights will be dynamically loaded here -->
+                    <!-- <p>Loading business spotlights...</p> -->
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="../images/tk_12617834.png" alt="Timbuktu Chamber of Commerce Logo" width="80" height="80">
+                <div class="footer-title">
+                    <h3>Timbuktu Chamber of Commerce</h3>
+                    <p>10 Rue De La Paix</p>
+                    <p>Timbuktu, Mali 999</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@timbukuc.org</p>
+                <p>(233) 555-230</p>
+                <p><a href="https://maps.app.goo.gl/iKogkcXYoWpCNyJy5" target="_blank" rel="noopener noreferrer">📍 Location Map</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce | Andrew C. Awadike | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+        <div class="footer-social">
+            <a href="https://youtube.com" target="_blank">
+                <img src="../images/icons8-youtube-48.png" alt="YouTube" width="40" height="40">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../images/icons8-twitter-50.png" alt="Twitter" width="40" height="40">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="../images/icons8-linkedin-48.png" alt="LinkedIn" width="40" height="40">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</body>
+</html>
