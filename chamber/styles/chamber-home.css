@@ -243,6 +243,14 @@
     color: #333;
 }
 
+
+main > h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
 /* Medium Screens */
 @media screen and (min-width: 768px) {
     .main-grid {
