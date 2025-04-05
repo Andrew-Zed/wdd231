@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Set weather icon
         const iconCode = data.weather[0].icon;
-        weatherIconElement.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+        weatherIconElement.src = getWeatherIconUrl(iconCode);
         weatherIconElement.alt = descriptions;
     }
     
