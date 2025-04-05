@@ -72,7 +72,7 @@ function displayMembers(members) {
         // Build card content
         card.innerHTML = `
             <div class="card-image">
-                <img src="images/members/${member.image}" alt="${member.name}"  width="300" height="200" loading="eager">
+                <img src="images/members/${member.image}" alt="${member.name}"  width="300" height="200" loading="lazy">
             </div>
             <div class="card-content">
                 <span class="badge ${membershipClass}">${membershipLevel}</span>
@@ -94,11 +94,6 @@ function displayMembers(members) {
 
 // Check for saved view preference
 const savedView = localStorage.getItem('directoryView');
-if (savedView === 'list') {
-    listBtn.click();
-} else {
-    gridBtn.click(); // Default to grid view
-}
-
+(savedView === 'list' ? listBtn : gridBtn).click();
 // Load the data when the page is ready
 document.addEventListener('DOMContentLoaded', getDirectoryData);

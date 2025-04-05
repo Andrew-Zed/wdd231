@@ -1,4 +1,9 @@
 // Weather API Integration
+
+function getWeatherIconUrl(iconCode) {
+    return `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // OpenWeatherMap API credentials
     const apiKey = 'c743ce486802f958fb9a496947f4ef5f'; 
