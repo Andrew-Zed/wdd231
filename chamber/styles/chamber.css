@@ -1,22 +1,22 @@
-/* CSS Variables */
+/* CSS Variables with improved color contrast */
 :root {
     --primary-color: #1D3557;
-    --secondary-color: #457B9D;
+    --secondary-color: #2B5D80; /* Darkened for better contrast */
     --background-color: #F1FAEE;
     --text-color: #1D3557;
-    --accent-color: #E63946;
-    --light-color: #A8DADC;
+    --accent-color: #D02B3B; /* Darkened from #E63946 for better contrast */
+    --light-color: #6AAFB4; /* Darkened from #A8DADC for better contrast */
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     --border-radius: 5px;
     --max-width: 1200px;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    --secondary-color-accessible: #457B9D; /* Darker version of #457B9D for better contrast */
-    --light-color-accessible: #A8DADC; /* Darker version of #A8DADC for better contrast */
+    --secondary-color-accessible: #2B5D80; /* Darkened for better contrast */
+    --light-color-accessible: #6AAFB4; /* Darkened for better contrast */
     --footer-link-color: #FFD166; /* Yellow for footer links */
 }
 
-/* Dark mode variables */
+/* Dark mode variables with improved contrast */
 .dark-mode {
     --primary-color: #93B5E1;
     --secondary-color: #6997C5;
@@ -25,6 +25,7 @@
     --light-color: #304968;
     --secondary-color-accessible: #FFFFFF; /* White text for links in dark mode */
     --light-color-accessible: #4A70A0; /* Darker version for active nav */
+    --accent-color: #FF6B6B; /* Brighter for dark mode */
 }
 
 /* Global Styles */

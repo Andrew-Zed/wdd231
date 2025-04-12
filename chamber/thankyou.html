@@ -12,48 +12,44 @@
     <meta property="og:image" content="images/timbuktu-og-image.jpg">
     <meta property="og:url" content="https://andrew-zed.github.io/wdd231/chamber/thankyou.html">
 
-    <title>Application Received | Chamber of Commerce</title>
+    <title>Application Received | Timbuktu Chamber of Commerce</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../images/favicon.ico">
 
-
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="preload" href="styles/chamber.css" as="style"> -->
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-medium.css" media="(min-width: 32.5em)">
-    <link rel="stylesheet" href="styles/chamber-large.css" media="(min-width: 64em)">
+    <link rel="stylesheet" href="styles/chamber-medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/chamber-large.css" media="(min-width: 1024px)">
     <link rel="stylesheet" href="styles/thankyou.css">
-   
-    
 </head>
 <body>
-
     <header>
         <div class="header-content">
             <div class="logo">
                 <img src="../images/tk_12617834.png" alt="Timbuktu Chamber of Commerce Logo">
                 <div class="site-name">
-                    <h1>Chamber of Commerce</h1>
+                    <h1>Timbuktu</h1>
+                    <p>Chamber of Commerce</p>
                 </div>
             </div>
             <div class="header-right">
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
                         <img src="../images/icons-facebook-small.png" alt="Facebook">
                     </a>
-                    <a href="https://twitter.com" target="_blank">
+                    <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
                         <img src="../images/icons8-twitter-50.png" alt="Twitter">
                     </a>
-                    <a href="https://linkedin.com" target="_blank">
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
                         <img src="../images/icons8-linkedin-48.png" alt="LinkedIn">
                     </a>
                 </div>
-                <button id="darkModeToggle">🌓</button>
-                <button id="hamburgerBtn">&#9776;</button>
+                <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+                <button id="hamburgerBtn" aria-label="Toggle navigation menu">&#9776;</button>
             </div>
         </div>
         <nav>
@@ -61,15 +57,13 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Business Directory</a></li>
-                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="join.html">Join</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <main class="thankyou-main">
-
         <div class="thankyou-container">
             <h2>Thank You for Your Application!</h2>
             <div class="confirmation-message">
@@ -120,9 +114,7 @@
                 <a href="index.html" class="primary-btn">Return to Home</a>
                 <a href="directory.html" class="secondary-btn">Explore Business Directory</a>
             </div>
-        
         </div>
-
     </main>
 
     <footer>
@@ -146,13 +138,13 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
         <div class="footer-social">
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube channel">
                 <img src="../images/icons8-youtube-48.png" alt="YouTube" width="40" height="40">
             </a>
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
                 <img src="../images/icons8-twitter-50.png" alt="Twitter" width="40" height="40">
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
                 <img src="../images/icons8-linkedin-48.png" alt="LinkedIn" width="40" height="40">
             </a>
         </div>
@@ -160,7 +152,5 @@
 
     <!-- Javascript -->
     <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    
 </body>
 </html>
