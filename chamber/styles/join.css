@@ -1,3 +1,16 @@
+/* Add this rule to hide the main h1 while keeping it in the DOM for validation */
+.join-main h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* Join Page Styles */
 
 /* Main Layout */
@@ -7,7 +20,7 @@
     padding: 1rem;
 }
 
-.join-main h1, h2 {
+.join-main h2 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
