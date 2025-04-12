@@ -7,7 +7,7 @@
     padding: 1rem;
 }
 
-.join-main h2 {
+.join-main h1, h2 {
     text-align: center;
     color: var(--primary-color);
     margin-bottom: 1.5rem;
@@ -50,9 +50,10 @@ fieldset {
 }
 
 legend {
-    color: var(--accent-color);
+    color: #0D2642;
     font-weight: bold;
     padding: 0 0.5rem;
+    font-size: 1.1rem;
 }
 
 label {
@@ -63,6 +64,10 @@ label {
 
 .dark-mode label {
     color: white;
+}
+
+.dark-mode legend {
+    color: #FFFFFF;     /* White for dark mode */
 }
 
 input[type="text"],
@@ -101,7 +106,7 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: var(--primary-color);
+    background-color: #0D2642;
     transform: translateY(-2px);
 }
 
@@ -171,14 +176,22 @@ textarea {
 }
 
 .card h4 {
-    color: var(--accent-color);
+    color: #0D2642;     /* Darker than --accent-color for better contrast */
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;  /* Slightly larger */
+    font-weight: 700;   /* Bolder */
 }
 
 .price {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 1rem 0;
+    color: #0D2642;
+}
+
+.dark-mode .card h4,
+.dark-mode .price {
+    color: #FFFFFF;     /* White for maximum contrast in dark mode */
 }
 
 .benefits-btn {
@@ -188,12 +201,13 @@ textarea {
     border-radius: var(--border-radius);
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+    font-weight: 700;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .benefits-btn:hover {
-    background-color: var(--secondary-color);
+    background-color: #0D2642;
 }
 
 /* Modal Styles */
@@ -240,10 +254,15 @@ textarea {
 }
 
 .modal h3 {
-    color: var(--accent-color);
+    color: #0D2642;
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--light-color);
     padding-bottom: 0.5rem;
+    font-weight: 700; 
+}
+
+.dark-mode .modal h3 {
+    color: #FFFFFF;     /* White for maximum contrast in dark mode */
 }
 
 .modal ul {

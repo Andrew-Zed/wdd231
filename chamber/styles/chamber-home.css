@@ -37,7 +37,7 @@
 }
 
 .cta-button:hover {
-    background-color: var(--primary-color);
+    background-color: #0D2642;
     transform: translateY(-2px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -74,17 +74,22 @@
 /* Section Headers */
 .events-section h2,
 .weather-section h2,
-.spotlights-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    border-bottom: 2px solid var(--light-color);
-    padding-bottom: 0.5rem;
+.spotlights-section h2,
+.form-section h3,
+.membership-cards h3 {
+    color: #0D2642;
+    font-weight: 700;
+    /* margin-bottom: 1rem; */
+    /* border-bottom: 2px solid var(--light-color);
+    padding-bottom: 0.5rem; */
 }
 
 .dark-mode .events-section h2,
 .dark-mode .weather-section h2,
-.dark-mode .spotlights-section h2 {
-    color: white;
+.dark-mode .spotlights-section h2,
+.dark-mode .form-section h3,
+.dark-mode .membership-cards h3 {
+    color: #FFFFFF; 
 }
 
 /* Event Section */
@@ -101,8 +106,13 @@
 }
 
 .event-card h3 {
-    color: var(--secondary-color);
+    color: #3D6E8A;
     margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.dark-mode .event-card h3 {
+    color: #A3C5EE;     /* Lightened color for dark mode */
 }
 
 .event-card p {
@@ -111,7 +121,11 @@
 
 .event-date {
     font-weight: bold;
-    color: var(--accent-color);
+    color: #D12836;
+}
+
+.dark-mode .event-date {
+    color: #F47983;     /* Lightened for dark mode */
 }
 
 /* Weather Section */
@@ -212,7 +226,12 @@
 
 .spotlight-info h3 {
     margin-bottom: 0.5rem;
-    color: var(--primary-color);
+    color: #0D2642;
+    font-weight: 700;
+}
+
+.dark-mode .spotlight-info h3 {
+    color: #FFFFFF;     /* White for maximum contrast in dark mode */
 }
 
 .spotlight-info p {
@@ -234,13 +253,13 @@
 }
 
 .membership-badge.gold {
-    background-color: #FFD700;
-    color: #333;
+    background-color: #D4B31C;
+    color: #000000;
 }
 
 .membership-badge.silver {
-    background-color: #C0C0C0;
-    color: #333;
+    background-color: #9A9A9A;
+    color: #000000;
 }
 
 

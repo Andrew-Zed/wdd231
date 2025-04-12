@@ -1,19 +1,19 @@
 /* CSS Variables */
 :root {
-    --primary-color: #1D3557;
-    --secondary-color: #457B9D;
-    --background-color: #F1FAEE;
-    --text-color: #1D3557;
-    --accent-color: #E63946;
-    --light-color: #A8DADC;
+    --primary-color: #1D3557;          /* Keep existing - good contrast with white */
+    --secondary-color: #3D6E8A;        /* Darkened from #457B9D for better contrast */
+    --background-color: #F1FAEE;       /* Keep existing */
+    --text-color: #1D3557;             /* Keep existing - good contrast with background */
+    --accent-color: #D12836;           /* Darkened from #E63946 for better contrast */
+    --light-color: #739FA2;            /* Darkened from #A8DADC for better contrast */
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     --border-radius: 5px;
     --max-width: 1200px;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    --secondary-color-accessible: #457B9D; /* Darker version of #457B9D for better contrast */
-    --light-color-accessible: #A8DADC; /* Darker version of #A8DADC for better contrast */
-    --footer-link-color: #FFD166; /* Yellow for footer links */
+    --secondary-color-accessible: #3D6E8A; 
+    --light-color-accessible: #5580B4;     
+    --footer-link-color: #FFD166;          
 }
 
 /* Dark mode variables */
@@ -48,7 +48,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: var(--secondary-color);
-    text-decoration: none;
+    /* text-decoration: none; */
     transition: color 0.3s;
 }
 
@@ -160,11 +160,12 @@ nav {
     padding: 0.8rem;
     color: white;
     text-align: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #primaryNav a:hover {
-    background-color: var(--light-color);
+    background-color: var(--light-color-accessible);
+    color: white;
 }
 
 #primaryNav .active {
@@ -186,7 +187,7 @@ nav {
 }
 
 .view-toggle button {
-    background-color: var(--secondary-color);
+    background-color: #3D6E8A;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -198,7 +199,7 @@ nav {
 }
 
 .view-toggle button.active {
-    background-color: var(--primary-color);
+    background-color: #0D2642;
 }
 
 .view-toggle button:hover {
@@ -253,7 +254,11 @@ nav {
 .card h3 {
     margin-top: 0;
     color: var(--primary-color);
+    font-size: 1.25rem; /* Making headers larger for better readability */
+    font-weight: 700;
 }
+
+
 
 .card .badge {
     align-self: flex-start;
@@ -266,13 +271,13 @@ nav {
 }
 
 .card .badge.gold {
-    background-color: #FFD700;
-    color: #333;
+    background-color: #D4B31C;
+    color: #000000;
 }
 
 .card .badge.silver {
-    background-color: #C0C0C0;
-    color: #333;
+    background-color: #9A9A9A;
+    color: #000000;
 }
 
 .card .badge.member {
@@ -294,13 +299,16 @@ nav {
 }
 
 .card-link a {
-   background-color: var(--secondary-color-accessible);
-    color: white;
-    font-weight: bold;
+   background-color: #3D6E8A;
+   color: white;
+   font-weight: bold;
+   padding: 0.4rem 0.8rem;
+   border-radius: var(--border-radius);
+   display: inline-block;
 }
 
 .card-link a:hover {
-    background-color: var(--primary-color);
+    background-color: #0D2642;
 }
 
 /* List View */
@@ -397,7 +405,7 @@ footer {
 }
 
 .footer-contact a {
-    color: var(--footer-link-color);
+    color: #FFE08A;
     text-decoration: underline;
     font-weight: bold;
 }
