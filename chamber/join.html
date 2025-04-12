@@ -17,21 +17,16 @@
     <!-- Favicon -->
     <link rel="icon" href="../images/favicon.ico">
 
-
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!-- <link rel="preload" href="styles/chamber.css" as="style"> -->
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-medium.css">
-    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/chamber-large.css" media="(min-width: 1024px)">
     <link rel="stylesheet" href="styles/join.css">
-   
-    
 </head>
 <body>
-
     <header>
         <div class="header-content">
             <div class="logo">
@@ -43,18 +38,18 @@
             </div>
             <div class="header-right">
                 <div class="social-icons">
-                    <a href="https://facebook.com" target="_blank">
+                    <a href="https://facebook.com" target="_blank" aria-label="Visit our Facebook page">
                         <img src="../images/icons-facebook-small.png" alt="Facebook">
                     </a>
-                    <a href="https://twitter.com" target="_blank">
+                    <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
                         <img src="../images/icons8-twitter-50.png" alt="Twitter">
                     </a>
-                    <a href="https://linkedin.com" target="_blank">
+                    <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
                         <img src="../images/icons8-linkedin-48.png" alt="LinkedIn">
                     </a>
                 </div>
-                <button id="darkModeToggle">🌓</button>
-                <button id="hamburgerBtn">&#9776;</button>
+                <button id="darkModeToggle" aria-label="Toggle dark mode">🌓</button>
+                <button id="hamburgerBtn" aria-label="Toggle navigation menu">&#9776;</button>
             </div>
         </div>
         <nav>
@@ -62,11 +57,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Business Directory</a></li>
-                <li class="active"><a href="join.html">Join</a></li>
+                <li class="active"><a href="join.html" aria-current="page">Join</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <main class="join-main">
@@ -102,7 +96,6 @@
                         <label for="business">Business/Organization Name*:
                             <input type="text" id="business" name="business" required autocomplete="organization" title="Please enter your business or organization name">
                         </label>
-
                     </fieldset>
 
                     <fieldset>
@@ -126,9 +119,9 @@
 
                     <fieldset>
                         <legend>Business Description</legend>
-                            <label for="description">
-                                <textarea id="description" name="description" title="Please describe your business/organization"></textarea>
-                            </label>
+                        <label for="description">
+                            <textarea id="description" name="description" title="Please describe your business/organization"></textarea>
+                        </label>
                     </fieldset>
 
                     <input type="hidden" id="timestamp" name="timestamp">
@@ -166,7 +159,6 @@
                         <p class="price">$250/year</p>
                         <button class="benefits-btn" onclick="openModal('gold-modal')">View Benefits</button>
                     </div>
-
                 </div>
             </section>
         </div>
@@ -183,6 +175,7 @@
                     <li>Access to member resources</li>
                 </ul>
                 <p><strong>Perfect for:</strong> Non-profit organizations looking to connect with the local business community.</p>
+                <button onclick="closeModal('np-modal')">Close</button>
             </div>
         </div>
 
@@ -198,6 +191,7 @@
                     <li>Social media mention (once per year)</li>
                 </ul>
                 <p><strong>Perfect for:</strong> Small businesses and startups looking to establish their local presence.</p>
+                <button onclick="closeModal('bronze-modal')">Close</button>
             </div>
         </div>
 
@@ -215,6 +209,7 @@
                     <li>Discounted event sponsorship opportunities</li>
                 </ul>
                 <p><strong>Perfect for:</strong> Growing businesses seeking increased visibility and networking opportunities.</p>
+                <button onclick="closeModal('silver-modal')">Close</button>
             </div>
         </div>
 
@@ -235,9 +230,9 @@
                     <li>Priority access to chamber workshops and trainings</li>
                 </ul>
                 <p><strong>Perfect for:</strong> Established businesses seeking maximum exposure and premium benefits.</p>
+                <button onclick="closeModal('gold-modal')">Close</button>
             </div>
         </div>
-
     </main>
 
     <footer>
@@ -261,13 +256,13 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
         <div class="footer-social">
-            <a href="https://youtube.com" target="_blank">
+            <a href="https://youtube.com" target="_blank" aria-label="Visit our YouTube channel">
                 <img src="../images/icons8-youtube-48.png" alt="YouTube" width="40" height="40">
             </a>
-            <a href="https://twitter.com" target="_blank">
+            <a href="https://twitter.com" target="_blank" aria-label="Visit our Twitter page">
                 <img src="../images/icons8-twitter-50.png" alt="Twitter" width="40" height="40">
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://linkedin.com" target="_blank" aria-label="Visit our LinkedIn page">
                 <img src="../images/icons8-linkedin-48.png" alt="LinkedIn" width="40" height="40">
             </a>
         </div>

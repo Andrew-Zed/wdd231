@@ -34,41 +34,6 @@
     #directory.grid {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    #directory.list .card {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
-    
-    #directory.list .card-image {
-        width: 100%;
-        height: 150px;
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-    
-    #directory.list .card-content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    #directory.list .card-info {
-        flex-direction: column;
-        width: 100%;
-        margin: 0.5rem 0;
-    }
-    
-    #directory.list .card-info p {
-        margin: 0.3rem 0;
-    }
-    
-    #directory.list .card-link {
-        margin-left: 0;
-        width: 100%;
-        text-align: left;
-        margin-top: 0.5rem;
-    }
     
     /* Footer */
     .footer-top {
@@ -92,10 +57,34 @@
         justify-content: center;
         gap: 1rem;
     }
+    
+    /* Join Page */
+    .join-main .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .join-main .modal-content {
+        margin: 10% auto;
+        max-width: 600px;
+    }
+    
+    /* Thank You Page */
+    .thankyou-main .details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .thankyou-main .actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .social-icons{
+/* Hide social icons on mobile */
+@media screen and (max-width: 767px) {
+    .header-right .social-icons {
         display: none;
     }
 }

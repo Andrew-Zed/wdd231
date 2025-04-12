@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Add this rule to hide the main h1 while keeping it in the DOM for validation */
 .join-main h1 {
     position: absolute;
@@ -12,6 +13,9 @@
 }
 
 /* Join Page Styles */
+=======
+/* Join Page Styles with improved color contrast */
+>>>>>>> temp-branch
 
 /* Main Layout */
 .join-main {
@@ -26,10 +30,33 @@
     margin-bottom: 1.5rem;
 }
 
+.dark-mode .join-main h2 {
+    color: white;
+}
+
 .content-container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+/* Desktop layout to match the screenshot */
+@media screen and (min-width: 1024px) {
+    .content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: flex-start;
+    }
+
+    .form-section {
+        grid-column: 1;
+    }
+
+    .membership-cards {
+        grid-column: 2;
+        align-self: start;
+    }
 }
 
 /* Form Styles */
@@ -67,6 +94,10 @@ legend {
     font-weight: bold;
     padding: 0 0.5rem;
     font-size: 1.1rem;
+}
+
+.dark-mode legend {
+    color: white; /* Make legend text white in dark mode */
 }
 
 label {
@@ -118,6 +149,10 @@ textarea {
     transition: background-color 0.3s, transform 0.2s;
 }
 
+.dark-mode .submit-btn {
+    background-color: var(--secondary-color); /* Change button color in dark mode */
+}
+
 .submit-btn:hover {
     background-color: #0D2642;
     transform: translateY(-2px);
@@ -154,9 +189,9 @@ textarea {
     padding: 1.5rem;
     box-shadow: var(--shadow);
     text-align: center;
-    transform: translateY(50px);
-    opacity: 0;
-    animation: card-appear 0.5s forwards;
+    transform: translateY(0);
+    opacity: 1;
+    animation: card-appear 0.8s forwards;
 }
 
 /* Animation for cards */
@@ -287,39 +322,16 @@ textarea {
     margin-bottom: 0.5rem;
 }
 
-/* Medium screens - starting at 768px */
-@media screen and (min-width: 768px) {
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .modal-content {
-        margin: 10% auto;
-        max-width: 600px;
-    }
+.modal button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
-/* Large screens - starting at 1024px */
-@media screen and (min-width: 1024px) {
-    .content-container {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    
-    .form-section {
-        flex: 3;
-    }
-    
-    .membership-cards {
-        flex: 2;
-    }
-    
-    .cards-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-    
-    .submit-btn {
-        width: auto;
-    }
+.modal button:hover {
+    background-color: var(--accent-color);
 }
