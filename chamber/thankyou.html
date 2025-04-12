@@ -22,8 +22,8 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/chamber-medium.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="styles/chamber-large.css" media="(min-width: 1024px)">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="stylesheet" href="styles/thankyou.css">
 </head>
 <body>
@@ -72,31 +72,36 @@
 
             <div class="application-details">
                 <h3>Application Details</h3>
-                <div class="details-grid">
-                    <div class="detail-item">
-                        <span class="label">First Name:</span>
-                        <span class="value" id="firstName"></span>
+                <div class="details">
+                    <div class="column">
+                        <div class="detail-item">
+                            <span class="label">First Name:</span>
+                            <span class="value" id="firstName"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Email:</span>
+                            <span class="value" id="email"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Business Name:</span>
+                            <span class="value" id="business"></span>
+                        </div>
                     </div>
-                    <div class="detail-item">
-                        <span class="label">Last Name:</span>
-                        <span class="value" id="lastName"></span>
+                    <div class="column">
+                        <div class="detail-item">
+                            <span class="label">Last Name:</span>
+                            <span class="value" id="lastName"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Phone:</span>
+                            <span class="value" id="phone"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Date Submitted:</span>
+                            <span class="value" id="timestampDisplay"></span>
+                        </div>
                     </div>
-                    <div class="detail-item">
-                        <span class="label">Email:</span>
-                        <span class="value" id="email"></span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Phone:</span>
-                        <span class="value" id="phone"></span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Business Name:</span>
-                        <span class="value" id="business"></span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="label">Date Submitted:</span>
-                        <span class="value" id="timestampDisplay"></span>
-                    </div>
+                   
                 </div>
             </div>
 

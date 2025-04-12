@@ -124,6 +124,11 @@ header {
     display: flex;
     gap: 0.5rem;
 }
+@media screen and (max-width: 767px) {
+    .social-icons {
+        display: none;
+    }
+}
 
 .social-icons img {
     width: 30px;

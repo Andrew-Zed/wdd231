@@ -59,13 +59,13 @@
     color: white;
 }
 
-.details-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.details {
+    display: flex;
+    justify-content: space-around;
 }
 
 .detail-item {
+    display: flex;
     margin-bottom: 0.5rem;
 }
 
