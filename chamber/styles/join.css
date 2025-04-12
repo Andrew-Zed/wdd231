@@ -1,22 +1,5 @@
-<<<<<<< HEAD
-/* Add this rule to hide the main h1 while keeping it in the DOM for validation */
-.join-main h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-}
 
-/* Join Page Styles */
-=======
 /* Join Page Styles with improved color contrast */
->>>>>>> temp-branch
-
 /* Main Layout */
 .join-main {
     max-width: var(--max-width);
