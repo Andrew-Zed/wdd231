@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Arts & Culture Portal - Site Plan</title>
+    <style>
+        /* Color Schema */
+        :root {
+            --primary-color: #16613D; /* Deep Green - representing Nigeria's lush vegetation */
+            --secondary-color: #F7C64A; /* Gold - representing Nigeria's wealth and vibrant culture */
+            --accent-color: #E63946; /* Red - representing Nigerian passion and energy */
+            --text-dark: #333333; /* Dark text for readability */
+            --text-light: #FFFFFF; /* Light text for dark backgrounds */
+            --background-light: #F4F4F4; /* Light background for contrast */
+        }
+
+        /* Typography */
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--background-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .color-sample {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .color-box {
+            width: 150px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .color-display {
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .color-info {
+            height: 30%;
+            background-color: white;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .wireframes {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .wireframe {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .wireframe img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .scenario {
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .scenario h3 {
+            margin-top: 0;
+            color: var(--text-dark);
+        }
+
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .font-sample {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .font-box {
+            flex: 1;
+            min-width: 300px;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .wireframes, .color-sample, .font-sample {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nigerian Arts & Culture Portal</h1>
+        <p>Site Plan Document</p>
+    </header>
+
+    <main>
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Nigerian Arts & Culture Portal</strong></p>
+            <p>This name was selected to clearly communicate the focus on Nigerian art and cultural heritage. The term "Portal" suggests a comprehensive gateway that connects visitors to various aspects of Nigerian artistic expression and cultural elements. This straightforward and descriptive name will help both local and international users immediately understand the site's purpose and content focus.</p>
+            <p>Optional domain availability: nigerianartsandculture.com or nacp.org</p>
+        </section>
+
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The Nigerian Arts & Culture Portal serves as a comprehensive digital platform dedicated to celebrating, preserving, and promoting Nigeria's rich artistic and cultural heritage. The site's core purposes include:</p>
+            <ul>
+                <li>Providing a centralized online resource for exploring diverse Nigerian artistic expressions, including visual arts, music, literature, and film</li>
+                <li>Creating a showcase for both established and emerging Nigerian artists to gain visibility</li>
+                <li>Serving as an educational resource about Nigerian cultural traditions, artistic movements, and contemporary developments</li>
+                <li>Connecting visitors with cultural events, exhibitions, and performances across Nigeria and internationally</li>
+                <li>Building community through interactive features that allow visitors to engage with content and connect with artists</li>
+            </ul>
+            <p>Through these services, the portal aims to make Nigerian arts and culture more accessible to both local and global audiences while supporting the promotion and preservation of Nigeria's cultural heritage.</p>
+        </section>
+
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            
+            <div class="scenario">
+                <h3>Scenario 1</h3>
+                <p><em>"I'm a researcher studying West African art forms and need to find information about traditional Nigerian sculpture techniques and their contemporary applications. Where can I find comprehensive information about notable Nigerian sculptors and their works?"</em></p>
+                <p>This scenario represents academic researchers and art enthusiasts seeking in-depth information about specific Nigerian art forms.</p>
+            </div>
+            
+            <div class="scenario">
+                <h3>Scenario 2</h3>
+                <p><em>"I'm planning a trip to Lagos and want to experience authentic Nigerian cultural events during my visit. How can I find a calendar of upcoming exhibitions, music performances, and cultural festivals?"</em></p>
+                <p>This scenario represents international tourists who want to engage with Nigerian cultural activities during their visit.</p>
+            </div>
+            
+            <div class="scenario">
+                <h3>Scenario 3</h3>
+                <p><em>"I'm a Nigerian artist living abroad and want to connect with the local art scene back home. How can I find information about galleries, artist residencies, and submission opportunities for Nigerian artists?"</em></p>
+                <p>This scenario represents members of the Nigerian diaspora seeking to maintain connections with their cultural roots and artistic communities.</p>
+            </div>
+        </section>
+
+        <section id="color-schema">
+            <h2>Color Schema</h2>
+            <p>The color schema for the Nigerian Arts & Culture Portal draws inspiration from Nigeria's national colors and natural landscape, creating a vibrant yet professional aesthetic that represents the richness of Nigerian culture.</p>
+            
+            <div class="color-sample">
+                <div class="color-box">
+                    <div class="color-display" style="background-color: #16613D;">Primary</div>
+                    <div class="color-info">#16613D<br>Deep Green</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-display" style="background-color: #F7C64A;">Secondary</div>
+                    <div class="color-info">#F7C64A<br>Gold</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-display" style="background-color: #E63946;">Accent</div>
+                    <div class="color-info">#E63946<br>Red</div>
+                </div>
+                <div class="color-box">
+                    <div class="color-display" style="background-color: #333333; color: white;">Text Dark</div>
+                    <div class="color-info">#333333<br>Dark Gray</div>
+                </div>
+            </div>
+            
+            <h3>Color Applications</h3>
+            <ul>
+                <li><strong>Primary Color (Deep Green #16613D):</strong> Main navigation, headers, footer, and primary buttons. Represents Nigeria's lush vegetation and is part of the national color palette.</li>
+                <li><strong>Secondary Color (Gold #F7C64A):</strong> Sub-headings, highlights, secondary buttons, and background accents. Represents the vibrant energy of Nigerian culture and artistic expression.</li>
+                <li><strong>Accent Color (Red #E63946):</strong> Call-to-action elements, important notifications, and special feature highlights. Adds energy and draws attention to key elements.</li>
+                <li><strong>Text Dark (#333333):</strong> Primary text color for optimal readability.</li>
+                <li><strong>Text Light (#FFFFFF):</strong> Text on dark backgrounds for proper contrast.</li>
+                <li><strong>Background Light (#F4F4F4):</strong> Page backgrounds to enhance readability and content focus.</li>
+            </ul>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>The typography selection for the Nigerian Arts & Culture Portal aims to balance professionalism with artistic expression, ensuring excellent readability while reflecting the site's cultural focus.</p>
+            
+            <div class="font-sample">
+                <div class="font-box">
+                    <h3 style="font-family: 'Montserrat', sans-serif;">Montserrat</h3>
+                    <p style="font-family: 'Montserrat', sans-serif;">Primary Heading Font</p>
+                    <p style="font-family: 'Montserrat', sans-serif;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                    <p><strong>Usage:</strong> All headings (h1-h6), navigation items, and important call-to-action elements. Montserrat provides a modern, clean appearance with excellent readability at various sizes.</p>
+                </div>
+                
+                <div class="font-box">
+                    <h3 style="font-family: 'Lato', sans-serif;">Lato</h3>
+                    <p style="font-family: 'Lato', sans-serif;">Primary Body Font</p>
+                    <p style="font-family: 'Lato', sans-serif;">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>1234567890</p>
+                    <p><strong>Usage:</strong> Body text, paragraphs, descriptions, and general content. Lato offers excellent readability across devices and screen sizes while maintaining a professional appearance.</p>
+                </div>
+            </div>
+            
+            <p>This font pairing creates a clear visual hierarchy while maintaining excellent readability across devices and screen sizes. Both fonts have good internationalization support for potential multilingual content.</p>
+        </section>
+
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <p>The following wireframes represent the basic layout structure for the Nigerian Arts & Culture Portal homepage in both mobile and desktop views. These wireframes focus on the structural layout and content organization rather than visual design elements.</p>
+            
+            <div class="wireframes">
+                <div class="wireframe">
+                    <h3>Mobile View</h3>
+                    <svg width="100%" height="600" viewBox="0 0 300 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Mobile phone outline -->
+                        <rect x="10" y="10" width="280" height="580" rx="20" fill="white" stroke="#333" stroke-width="2"/>
+                        
+                        <!-- Header -->
+                        <rect x="20" y="30" width="260" height="60" fill="#16613D"/>
+                        <rect x="40" y="45" width="180" height="15" fill="#F7C64A"/>
+                        <rect x="40" y="65" width="120" height="10" fill="white"/>
+                        <rect x="230" y="45" width="30" height="25" fill="white"/>
+                        
+                        <!-- Hero section -->
+                        <rect x="20" y="100" width="260" height="150" fill="#ddd"/>
+                        <rect x="60" y="140" width="180" height="20" fill="white"/>
+                        <rect x="80" y="170" width="140" height="15" fill="white"/>
+                        <rect x="100" y="200" width="100" height="30" rx="5" fill="#E63946"/>
+                        
+                        <!-- Navigation circles -->
+                        <circle cx="120" cy="270" r="5" fill="#333"/>
+                        <circle cx="140" cy="270" r="5" fill="#333"/>
+                        <circle cx="160" cy="270" r="5" fill="#333"/>
+                        <circle cx="180" cy="270" r="5" fill="#333"/>
+                        
+                        <!-- Main content sections -->
+                        <rect x="20" y="290" width="260" height="80" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="30" y="300" width="100" height="10" fill="#16613D"/>
+                        <rect x="30" y="320" width="240" height="40" fill="#ddd"/>
+                        
+                        <rect x="20" y="380" width="260" height="80" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="30" y="390" width="100" height="10" fill="#16613D"/>
+                        <rect x="30" y="410" width="240" height="40" fill="#ddd"/>
+                        
+                        <rect x="20" y="470" width="260" height="80" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="30" y="480" width="100" height="10" fill="#16613D"/>
+                        <rect x="30" y="500" width="240" height="40" fill="#ddd"/>
+                        
+                        <!-- Footer -->
+                        <rect x="20" y="560" width="260" height="20" fill="#16613D"/>
+                    </svg>
+                    <p>Key elements include a hamburger menu for mobile navigation, a prominent hero section with featured content, content sections organized vertically, and touch-friendly navigation elements.</p>
+                </div>
+                
+                <div class="wireframe">
+                    <h3>Desktop View</h3>
+                    <svg width="100%" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect x="0" y="0" width="800" height="600" fill="white"/>
+                        
+                        <!-- Header -->
+                        <rect x="0" y="0" width="800" height="80" fill="#16613D"/>
+                        <rect x="50" y="25" width="200" height="30" fill="#F7C64A"/>
+                        <rect x="450" y="30" width="300" height="20" fill="white"/>
+                        
+                        <!-- Hero section -->
+                        <rect x="0" y="80" width="800" height="300" fill="#ddd"/>
+                        <rect x="200" y="150" width="400" height="40" fill="white"/>
+                        <rect x="250" y="200" width="300" height="20" fill="white"/>
+                        <rect x="325" y="250" width="150" height="40" rx="5" fill="#E63946"/>
+                        
+                        <!-- Main content sections -->
+                        <rect x="50" y="400" width="220" height="150" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="70" y="420" width="100" height="15" fill="#16613D"/>
+                        <rect x="70" y="445" width="180" height="90" fill="#ddd"/>
+                        
+                        <rect x="290" y="400" width="220" height="150" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="310" y="420" width="100" height="15" fill="#16613D"/>
+                        <rect x="310" y="445" width="180" height="90" fill="#ddd"/>
+                        
+                        <rect x="530" y="400" width="220" height="150" fill="#F4F4F4" stroke="#ddd"/>
+                        <rect x="550" y="420" width="100" height="15" fill="#16613D"/>
+                        <rect x="550" y="445" width="180" height="90" fill="#ddd"/>
+                        
+                        <!-- Footer -->
+                        <rect x="0" y="570" width="800" height="30" fill="#16613D"/>
+                    </svg>
+                    <p>Desktop layout features a horizontal navigation menu, larger hero section with prominent call-to-action, grid-based content organization, and additional content sections displayed side-by-side for better use of screen space.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nigerian Arts & Culture Portal - Site Plan</p>
+    </footer>
+</body>
+</html>
