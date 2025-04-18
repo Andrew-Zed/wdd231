@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our products - Quality items with detailed information">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Your Website Title - Products">
+    <meta property="og:description" content="Explore our featured products and services">
+    <meta property="og:image" content="images/social-preview.jpg">
+    <meta property="og:url" content="https://yourusername.github.io/wdd231/your-project/product.html">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Your Website Title | Products</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/medium.css" media="(min-width: 35rem)">
+    <link rel="stylesheet" href="css/large.css" media="(min-width: 64rem)">
+    <link rel="stylesheet" href="css/product.css" media="(min-width: 64rem)">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Website Logo">
+                </a>
+            </div>
+            <nav>
+                <button id="hamburgerBtn">&#9776;</button>
+                <ul id="primaryNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1>Our Products</h1>
+                <p>Explore our range of high-quality products designed to meet your needs</p>
+            </div>
+        </section>
+        
+        <section class="categories-section">
+            <div class="categories-container">
+                <h2>Product Categories</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-category="all">All Categories</button>
+                    <button class="filter-btn" data-category="Category A">Category A</button>
+                    <button class="filter-btn" data-category="Category B">Category B</button>
+                    <button class="filter-btn" data-category="Category C">Category C</button>
+                </div>
+                
+                <div class="search-sort-container">
+                    <div class="search-box">
+                        <label for="searchInput">Search:</label>
+                        <input type="text" id="searchInput" placeholder="Search products...">
+                    </div>
+                    <div class="sort-control">
+                        <label for="sortSelect">Sort by:</label>
+                        <select id="sortSelect">
+                            <option value="name-asc">Name (A-Z)</option>
+                            <option value="name-desc">Name (Z-A)</option>
+                            <option value="price-asc">Price (Low to High)</option>
+                            <option value="price-desc">Price (High to Low)</option>
+                            <option value="rating-desc">Rating (Highest)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products-section">
+            <div class="products-container">
+                <h2>Featured Products</h2>
+                <div id="productsGrid" class="products-grid">
+                    <!-- Products will be populated dynamically with JavaScript -->
+                    <p class="loading-message">Loading products...</p>
+                </div>
+                
+                <div class="pagination">
+                    <button id="prevPage" disabled>Previous</button>
+                    <span id="pageIndicator">Page 1 of 1</span>
+                    <button id="nextPage">Next</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="product-spotlight">
+            <div class="spotlight-container">
+                <h2>Product Spotlight</h2>
+                <div class="spotlight-content">
+                    <div class="spotlight-image">
+                        <img class="img-lazy" data-src="images/spotlight-product.jpg" src="images/placeholder.png" alt="Featured Product">
+                    </div>
+                    <div class="spotlight-info">
+                        <h3>Premium Product</h3>
+                        <p class="spotlight-description">This premium product offers exceptional quality and performance. It features state-of-the-art technology and design that sets it apart from competitors.</p>
+                        <ul class="spotlight-features">
+                            <li>Feature 1: High-quality materials</li>
+                            <li>Feature 2: Advanced technology</li>
+                            <li>Feature 3: Exceptional performance</li>
+                            <li>Feature 4: User-friendly design</li>
+                        </ul>
+                        <div class="spotlight-cta">
+                            <p class="spotlight-price">$99.99</p>
+                            <button class="view-details-btn" data-id="spotlight">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="newsletter-section">
+            <div class="newsletter-container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter to receive updates on new products and special offers.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" name="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div id="newsletterMessage" class="newsletter-message"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo-small.png" alt="Website Logo Small">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-info">
+                <p>&copy; <span id="currentYear"></span> Your Name | Last Updated: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal Dialog Template -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js" type="module"></script>
+    <script src="js/products.js" type="module"></script>
+</body>
+</html>

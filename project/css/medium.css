@@ -1,0 +1,90 @@
+/* Medium CSS - for screens 35rem (560px) and larger */
+
+/* === Navigation === */
+#hamburgerBtn {
+    display: none;
+}
+
+#primaryNav {
+    display: flex;
+    position: static;
+    width: auto;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+#primaryNav li {
+    width: auto;
+}
+
+#primaryNav a {
+    padding: 0.5rem 1rem;
+}
+
+/* === Header === */
+.header-content {
+    padding: 1rem 2rem;
+}
+
+/* === Layout === */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* === Featured Content === */
+.featured-items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* === Footer === */
+.footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo, .footer-links, .footer-social {
+    margin-bottom: 1rem;
+}
+
+.footer-info {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* === Form === */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.submit-button, .reset-button {
+    flex: 1;
+}
+
+/* === Modal === */
+.modal-content {
+    margin: 10% auto;
+    max-width: 80%;
+}
+
+/* === Hero Section === */
+.hero {
+    padding: 3rem 2rem;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+/* === About Section === */
+.about-section {
+    padding: 3rem 2rem;
+}
+
+/* === CTA Section === */
+.cta-section {
+    padding: 3rem 2rem;
+}

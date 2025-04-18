@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Historic Museum",
+        "address": "123 History Lane, Timbuktu",
+        "description": "Explore the rich history of Timbuktu at the Historic Museum, featuring artifacts and exhibits from ancient times.",
+        "image": "../images/museum.webp"
+    },
+    {
+        "name": "Central Park",
+        "address": "456 Greenway Blvd, Timbuktu",
+        "description": "Enjoy a day out in the sun at Central Park, a beautiful green space in the heart of the city.",
+        "image": "../images/park.webp"
+    },
+    {
+        "name": "Art Gallery",
+        "address": "789 Art St, Timbuktu",
+        "description": "Discover contemporary art from local and international artists at the Art Gallery.",
+        "image": "../images/gallery.webp"
+    },
+    {
+        "name": "City Library",
+        "address": "101 Book Rd, Timbuktu",
+        "description": "A haven for book lovers, the City Library offers a vast collection of books and resources.",
+        "image": "../images/library.webp"
+    },
+    {
+        "name": "Botanical Gardens",
+        "address": "202 Flora Ave, Timbuktu",
+        "description": "Stroll through the Botanical Gardens and enjoy the diverse plant life and serene environment.",
+        "image": "../images/gardens.webp"
+    },
+    {
+        "name": "Science Center",
+        "address": "303 Discovery Dr, Timbuktu",
+        "description": "Engage with interactive exhibits and learn about science and technology at the Science Center.",
+        "image": "../images/science.webp"
+    },
+    {
+        "name": "Aquarium",
+        "address": "404 Ocean Blvd, Timbuktu",
+        "description": "Experience the wonders of the ocean at the Aquarium, home to a variety of marine life.",
+        "image": "../images/aquarium.webp"
+    },
+    {
+        "name": "Zoo",
+        "address": "505 Wildlife Rd, Timbuktu",
+        "description": "Visit the Zoo to see a wide range of animals from around the world in naturalistic habitats.",
+        "image": "../images/zoo.webp"
+    }
+] 

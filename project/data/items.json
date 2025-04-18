@@ -1,0 +1,96 @@
+[
+    {
+      "id": "item1",
+      "name": "Featured Item 1",
+      "description": "This is a brief description of the first featured item. It provides a summary of what this item is about.",
+      "image": "images/item1.jpg",
+      "category": "Category A",
+      "rating": 4.5,
+      "date": "2025-03-15",
+      "price": 29.99,
+      "tags": ["tag1", "tag2", "tag3"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2",
+        "Detailed information point 3"
+      ]
+    },
+    {
+      "id": "item2",
+      "name": "Featured Item 2",
+      "description": "This is a brief description of the second featured item. It provides a summary of what this item is about.",
+      "image": "images/item2.jpg",
+      "category": "Category B",
+      "rating": 4.2,
+      "date": "2025-03-10",
+      "price": 19.99,
+      "tags": ["tag2", "tag4"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2"
+      ]
+    },
+    {
+      "id": "item3",
+      "name": "Featured Item 3",
+      "description": "This is a brief description of the third featured item. It provides a summary of what this item is about.",
+      "image": "images/item3.jpg",
+      "category": "Category A",
+      "rating": 4.8,
+      "date": "2025-03-05",
+      "price": 39.99,
+      "tags": ["tag1", "tag5"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2",
+        "Detailed information point 3",
+        "Detailed information point 4"
+      ]
+    },
+    {
+      "id": "item4",
+      "name": "Featured Item 4",
+      "description": "This is a brief description of the fourth featured item. It provides a summary of what this item is about.",
+      "image": "images/item4.jpg",
+      "category": "Category C",
+      "rating": 4.0,
+      "date": "2025-02-28",
+      "price": 24.99,
+      "tags": ["tag3", "tag4", "tag5"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2"
+      ]
+    },
+    {
+      "id": "item5",
+      "name": "Featured Item 5",
+      "description": "This is a brief description of the fifth featured item. It provides a summary of what this item is about.",
+      "image": "images/item5.jpg",
+      "category": "Category B",
+      "rating": 4.7,
+      "date": "2025-02-20",
+      "price": 34.99,
+      "tags": ["tag1", "tag2"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2",
+        "Detailed information point 3"
+      ]
+    },
+    {
+      "id": "item6",
+      "name": "Featured Item 6",
+      "description": "This is a brief description of the sixth featured item. It provides a summary of what this item is about.",
+      "image": "images/item6.jpg",
+      "category": "Category A",
+      "rating": 4.3,
+      "date": "2025-02-15",
+      "price": 22.99,
+      "tags": ["tag4", "tag5"],
+      "details": [
+        "Detailed information point 1",
+        "Detailed information point 2"
+      ]
+    }
+  ]

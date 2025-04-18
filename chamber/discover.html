@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Our Chamber</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="../styles/medium.css"
+      media="(min-width: 641px) and (max-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../styles/large.css"
+      media="(min-width: 1025px)"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Header content -->
+    </header>
+    <nav>
+      <!-- Navigation content -->
+    </nav>
+    <main>
+      <h1>Discover Our Chamber</h1>
+      <section id="items-of-interest">
+        <div class="card" id="historic-museum">
+          <h2>Historic Museum</h2>
+          <figure>
+            <img src="../images/museum.webp" alt="Historic Museum" />
+          </figure>
+          <address>123 History Lane, Timbuktu</address>
+          <p>
+            Explore the rich history of Timbuktu at the Historic Museum,
+            featuring artifacts and exhibits from ancient times.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="central-park">
+          <h2>Central Park</h2>
+          <figure>
+            <img src="../images/park.webp" alt="Central Park" />
+          </figure>
+          <address>456 Greenway Blvd, Timbuktu</address>
+          <p>
+            Enjoy a day out in the sun at Central Park, a beautiful green space
+            in the heart of the city.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="art-gallery">
+          <h2>Art Gallery</h2>
+          <figure>
+            <img src="../images/gallery.webp" alt="Art Gallery" />
+          </figure>
+          <address>789 Art St, Timbuktu</address>
+          <p>
+            Discover contemporary art from local and international artists at
+            the Art Gallery.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="city-library">
+          <h2>City Library</h2>
+          <figure>
+            <img src="../images/library.webp" alt="City Library" />
+          </figure>
+          <address>101 Book Rd, Timbuktu</address>
+          <p>
+            A haven for book lovers, the City Library offers a vast collection
+            of books and resources.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="botanical-gardens">
+          <h2>Botanical Gardens</h2>
+          <figure>
+            <img src="../images/gardens.webp" alt="Botanical Gardens" />
+          </figure>
+          <address>202 Flora Ave, Timbuktu</address>
+          <p>
+            Stroll through the Botanical Gardens and enjoy the diverse plant
+            life and serene environment.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="science-center">
+          <h2>Science Center</h2>
+          <figure>
+            <img src="../images/science.webp" alt="Science Center" />
+          </figure>
+          <address>303 Discovery Dr, Timbuktu</address>
+          <p>
+            Engage with interactive exhibits and learn about science and
+            technology at the Science Center.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="aquarium">
+          <h2>Aquarium</h2>
+          <figure>
+            <img src="../images/aquarium.webp" alt="Aquarium" />
+          </figure>
+          <address>404 Ocean Blvd, Timbuktu</address>
+          <p>
+            Experience the wonders of the ocean at the Aquarium, home to a
+            variety of marine life.
+          </p>
+          <button>Learn More</button>
+        </div>
+        <div class="card" id="zoo">
+          <h2>Zoo</h2>
+          <figure>
+            <img src="../images/zoo.webp" alt="Zoo" />
+          </figure>
+          <address>505 Wildlife Rd, Timbuktu</address>
+          <p>
+            Visit the Zoo to see a wide range of animals from around the world
+            in naturalistic habitats.
+          </p>
+          <button>Learn More</button>
+        </div>
+      </section>
+    </main>
+    <aside id="visitor-message">
+      <script>
+        const lastVisit = localStorage.getItem("lastVisit");
+        const now = Date.now();
+        let message = "";
+
+        if (!lastVisit) {
+          message = "Welcome! Let us know if you have any questions.";
+        } else {
+          const lastVisitDate = new Date(parseInt(lastVisit));
+          const daysSinceLastVisit = Math.floor(
+            (now - lastVisitDate) / (1000 * 60 * 60 * 24)
+          );
+
+          if (daysSinceLastVisit < 1) {
+            message = "Back so soon! Awesome!";
+          } else if (daysSinceLastVisit === 1) {
+            message = "You last visited 1 day ago.";
+          } else {
+            message = `You last visited ${daysSinceLastVisit} days ago.`;
+          }
+        }
+
+        localStorage.setItem("lastVisit", now);
+        document.getElementById("visitor-message").innerText = message;
+      </script>
+    </aside>
+    <footer>
+      <!-- Footer content -->
+    </footer>
+  </body>
+</html>

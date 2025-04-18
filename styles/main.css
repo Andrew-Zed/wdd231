@@ -1,0 +1,9 @@
+@media (min-width: 641px) {
+    #items-of-interest .card figure img {
+        transition: transform 0.3s ease;
+    }
+
+    #items-of-interest .card figure img:hover {
+        transform: scale(1.05);
+    }
+} 

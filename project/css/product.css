@@ -1,0 +1,62 @@
+/* Products Page Styling */
+
+/* === Page Header === */
+.page-header {
+    background-color: var(--light-gray);
+    padding: var(--spacing-large) var(--spacing-medium);
+    text-align: center;
+}
+
+.page-header h1 {
+    margin-bottom: var(--spacing-small);
+}
+
+/* === Categories Section === */
+.categories-section {
+    padding: var(--spacing-large) var(--spacing-medium);
+}
+
+.categories-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--accent-color);
+    color: white;
+    border-color: var(--accent-color);
+}
+
+.filter-btn:hover:not(.active) {
+    background-color: #e5e5e5;
+}
+
+.search-sort-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.search-box, .sort-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
