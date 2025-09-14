@@ -3,14 +3,12 @@
     /* Container constraint for larger screens */
     header, main, nav, footer {
         max-width: 900px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     /************************* HEADER ***************************/
-
-
     header {
-        grid-template-columns: 24px 1fr; /** auto;**/
+        grid-template-columns: 24px 1fr;
         padding: 10px 20px;
     }
 
@@ -19,32 +17,219 @@
     }
 
     /* Hide hamburger menu on larger screens */
-   .hamburger {
+    .hamburger {
         display: none;
-   } 
+    } 
 
-   /************************* NAVIGATION ***************************/
-   .navigation {
+    /************************* NAVIGATION ***************************/
+    .navigation {
         display: block;
         border-bottom: solid 1px #eee;
         background-color: #3D405B;
         margin: 0;
-   }
+    }
 
-   .navigation ul {
+    .navigation ul {
         display: flex;
         justify-content: center;
         margin: 0;
         padding: 0;
-   }
+    }
 
-   .navigation li {
+    .navigation li {
         border-bottom: none;
         border-right: 1px solid #555;
     }
 
-   .navigation a {
-        display: none;
-   }
+    .navigation li:last-child {
+        border-right: none;
+    }
 
+    .navigation a {
+        display: block;
+        padding: 1rem 2rem;
+        color: #fff;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    .navigation li.current {
+        background-color: #E07A5F;
+    }
+
+    .navigation a:hover,
+    .navigation a:focus {
+        background-color: #E07A5F;
+        color: #fff;
+    }
+
+    /************************* MAIN CONTENT ***************************/
+    main {
+        padding: 2rem 20px;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "title title"
+            "about photo"
+            "courses courses";
+        align-items: start;
+    }
+
+    main h1 {
+        grid-area: title;
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin: 0 0 1rem 0;
+    }
+
+    /************************* LAYOUT GRID ***************************/
+    .about-me {
+        grid-area: about;
+        padding: 1.5rem;
+    }
+
+    .student-photo {
+        grid-area: photo;
+        padding: 1.5rem;
+    }
+
+    .student-photo img {
+        max-width: 250px;
+        min-height: 250px;
+    }
+
+    .courses-section,
+    .courses-selection {
+        grid-area: courses;
+        grid-column: 1 / -1;
+        padding: 1.5rem;
+    }
+
+    /************************* COURSES SECTION ***************************/
+    .course-filters {
+        gap: 1rem;
+        margin: 1.5rem 0;
+    }
+
+    .filter-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        min-width: 100px;
+    }
+
+    .course-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .course-card {
+        padding: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.2rem;
+    }
+
+    /************************* FOOTER ***************************/
+    footer {
+        padding: 2rem 20px;
+    }
+
+    .social {
+        gap: 12px;
+        margin-bottom: 1.5rem;
+    }
+
+    .social a {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+    }
+
+    .social img {
+        width: 24px;
+        height: 24px;
+    }
+
+    footer p {
+        font-size: 1rem;
+        margin: 0.75rem 0;
+    }
+}
+
+/* Additional breakpoint for very large screens */
+@media only screen and (min-width: 64rem) {
+    
+    header, nav, main, footer {
+        max-width: 1200px;
+    }
+
+    main {
+        padding: 3rem 40px;
+        gap: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2rem;
+    }
+
+    .about-me,
+    .student-photo,
+    .courses-section,
+    .courses-selection {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 2.5rem 40px;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .course-card {
+        border-width: 2px;
+    }
+    
+    .filter-btn {
+        border-width: 2px;
+    }
+    
+    .social a {
+        border-width: 3px;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .course-card:hover {
+        transform: none;
+    }
+    
+    .social a:hover {
+        transform: none;
+    }
+    
+    .filter-btn:hover {
+        transform: none;
+    }
 }

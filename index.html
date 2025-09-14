@@ -32,9 +32,15 @@
         id="ham-btn"
         class="hamburger"
         aria-label="Toggle navigation menu"
+        aria-expanded="false"
       ></button>
     </header>
-    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+    <nav
+      id="nav-bar"
+      class="navigation"
+      aria-label="Main navigation"
+      aria-hidden="true"
+    >
       <ul>
         <li class="current"><a href="#" aria-current="page">Home</a></li>
         <li><a href="#">Chamber Project</a></li>
@@ -43,6 +49,7 @@
     </nav>
     <main>
       <h1>Home</h1>
+
       <section class="about-me">
         <h2>About Me</h2>
         <p>
@@ -52,11 +59,13 @@
           Dolore, accusantium?
         </p>
       </section>
+
       <section class="student-photo">
         <h2>Student Photo</h2>
-        <img src="/images/profile.jpg" alt="Andrew - Student photo" />
+        <img src="images/profile.jpg" alt="Andrew - Student photo" />
       </section>
-      <section class="courses-selection">
+
+      <section class="courses-section">
         <h2>Web Certificate Courses</h2>
         <div class="course-filters">
           <button
@@ -88,28 +97,52 @@
     </main>
     <footer>
       <div class="social">
-        <a href="https://github.com/Andrew-Zed" target="_blank"
-          ><img src="images/github.svg" alt="Github" width="16" height="16"
-        /></a>
+        <a
+          href="https://github.com/Andrew-Zed"
+          target="_blank"
+          aria-label="GitHub profile"
+        >
+          <img src="images/github.svg" alt="GitHub" width="16" height="16" />
+        </a>
         <a
           href="https://www.linkedin.com/in/andrew-awadike-661665101/"
           target="_blank"
-          ><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"
-        /></a>
-        <a href="https://www.facebook.com/" target="_blank"
-          ><img src="images/facebook.svg" alt="Facebook" width="16" height="16"
-        /></a>
-        <a href="https://www.instagram.com/andrewawadyke/" target="_blank"
-          ><img
+          aria-label="LinkedIn profile"
+        >
+          <img
+            src="images/linkedin.svg"
+            alt="LinkedIn"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook profile"
+        >
+          <img
+            src="images/facebook.svg"
+            alt="Facebook"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/andrewawadyke/"
+          target="_blank"
+          aria-label="Instagram profile"
+        >
+          <img
             src="images/instagram.svg"
-            alt="instagram"
+            alt="Instagram"
             width="16"
             height="16"
         /></a>
       </div>
       <p>
-        copyright &amp; <span id="currentyear"></span> • Andrew Awadike • Lagos,
-        Nigeria
+        &copy; <span id="currentyear"></span> &bull; Andrew Awadike &bull;
+        Lagos, Nigeria
       </p>
       <p id="lastModified"></p>
     </footer>
