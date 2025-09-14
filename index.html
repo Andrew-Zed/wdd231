@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Site Title - Web Development Portfolio</title>
+    <meta
+      name="description"
+      content="Andrew's web development portfolio showcasing projects, courses, and skills in computer programming and web development."
+    />
+    <meta name="author" content="Andrew Awadike" />
+
+    <!-- Google Font Here  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheets Here  -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/home.svg" alt="Site Logo" width="512" height="512" />
+      <span>Andrew Site Title</span>
+      <button
+        id="ham-btn"
+        class="hamburger"
+        aria-label="Toggle navigation menu"
+      ></button>
+    </header>
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+      <ul>
+        <li class="current"><a href="#" aria-current="page">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Home</h1>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+          eveniet vel blanditiis alias labore tempore amet assumenda temporibus
+          qui facilis sapiente facere possimus consequuntur in, at, ab deserunt.
+          Dolore, accusantium?
+        </p>
+      </section>
+      <section class="student-photo">
+        <h2>Student Photo</h2>
+        <img src="" alt="Andrew - Student photo" />
+      </section>
+      <section class="courses-selection">
+        <h2>Web Certificate Courses</h2>
+        <div class="course-filters">
+          <button
+            id="all-courses"
+            class="filter-btn active"
+            aria-pressed="true"
+          >
+            All
+          </button>
+          <button id="cse-courses" class="filter-btn" aria-pressed="false">
+            CSE
+          </button>
+          <button id="wdd-courses" class="filter-btn" aria-pressed="false">
+            WDD
+          </button>
+        </div>
+        <div
+          id="course-cards"
+          class="course-cards"
+          role="region"
+          aria-live="polite"
+          aria-label="Course cards"
+        ></div>
+        <p class="credit-total">
+          The total credits for courses listed above is
+          <span id="total-credits">0</span>
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="social">
+        <a href="https://github.com/Andrew-Zed" target="_blank"
+          ><img src="images/github.svg" alt="Github" width="16" height="16"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/andrew-awadike-661665101/"
+          target="_blank"
+          ><img src="images/linkedin.svg" alt="Linkedin" width="16" height="16"
+        /></a>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="images/facebook.svg" alt="Facebook" width="16" height="16"
+        /></a>
+        <a href="https://www.instagram.com/andrewawadyke/" target="_blank"
+          ><img
+            src="images/instagram.svg"
+            alt="instagram"
+            width="16"
+            height="16"
+        /></a>
+      </div>
+      <p>
+        copyright &copy <span id="currentyear"></span> • Andrew Awadike • Lagos,
+        Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,393 @@
+/* --------------------- COLOR SCHEME -------------------------
+    terra cotta #E07A5F
+    deep slate blue #3D405B
+    light gray #f8f8f8
+    medium gray #eee
+    dark gray #ddd
+*/
+
+
+
+/************************* SITE WIDE ***************************/
+* {
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Ensure no horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
+/************************* HEADER ***************************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #fff;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 24px; /**caveat**/
+    padding: 5px; /**5**/
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3D405B;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/************************* HAMBURGER NAVIGATION ***************************/
+.hamburger {
+    background-color: none;
+    border: none;
+    font-size: 2rem;
+    color: #3D405B;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+    background-color: #f0f0f0;
+    outline: 2px solid #E07A5F;
+    outline-offset: 2px;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+   content: "\00D7"; 
+   /* font-size: 2rem; */
+}
+
+/************************* NAVIGATION ***************************/
+.navigation {
+    display: none;
+    background-color: #fff;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3D405B;
+    text-decoration: none;
+    /* border-bottom: solid 1px #ddd; */
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    background-color: #E07A5F;
+    color: #fff;
+    outline: none;
+}
+
+/************************* MAIN CONTENT ***************************/
+
+main {
+    padding: 1rem 10px;
+    max-width: 100%;
+}
+
+h1 {
+    /* margin-left: 10px; */
+    color: #3D405B;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 1.5rem 0;
+}
+
+h2 {
+    color: #3D405B;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 1.5rem 0 0.75rem 0;
+    padding: 0.5rem 10px;
+    background-color: #3D405B;
+    color: #fff;
+    border-radius: 4px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+p {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+
+
+/************************* ABOUT ME SECTION ***************************/
+.about-me {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.about-me h2 {
+    margin-top: 0;
+}
+
+.about-me p {
+    text-align: justify;
+}
+
+
+/************************* STUDENT PHOTO SECTION ***************************/
+.student-photo {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+
+.student-photo h2 {
+    margin-top: 0;
+}
+
+.student-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ccc; /* Placeholder background */
+    min-height: 200px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
+
+
+
+/************************* COURSES SECTION ***************************/
+.courses-section {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.courses-section h2 {
+    margin-top: 0;
+}
+
+.course-filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.2rem;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    color: #3D405B;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    min-width: 70px;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    border-color: #E07A5F;
+    background-color: #E07A5F;
+    color: #fff;
+    outline: none;
+    transform: translateY(-1px);
+}
+
+.filter-btn.active {
+    background-color: #3D405B;
+    border-color: #3D405B;
+    color: #fff;
+}
+
+.course-cards {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.course-card {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.course-card.completed {
+    border-color: #E07A5F;
+    background-color: #fff8f6;
+    border-width: 2px;
+}
+
+.course-card h3 {
+    color: #3D405B;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.course-card .course-credits {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+}
+
+.course-card .course-type {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background-color: #eee;
+    color: #3D405B;
+    font-size: 0.8rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+.course-card.completed .course-type {
+    background-color: #E07A5F;
+    color: #fff;
+}
+
+.credit-total {
+    text-align: center;
+    font-weight: 600;
+    color: #3D405B;
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+
+/************************* FOOTER ***************************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    /* column-gap: 8px; */
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    /* border: red dashed 1px; */
+    border: 2px solid #3D405B;
+    border-radius: 22px;
+    transition: all 0.3s ease;
+    /* background-color: #fff; */
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) saturate(100%) invert(25%) sepia(8%) saturate(2020%) hue-rotate(213deg) brightness(95%) contrast(84%);
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/* .social a:hover,
+.social a:focus {
+    background-color: #3D405B;
+    transform: translateY(-2px);
+    outline: 2px solid #E07A5F;
+    outline-offset: 2px;
+} */
+
+
+.social a:hover img,
+.social a:focus img {
+    filter: brightness(0) saturate(100%) invert(100%);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #3D405B;
+    font-size: 0.9rem;
+}
+
+footer p:last-child {
+    color: #666;
+    font-size: 0.8rem;
+}

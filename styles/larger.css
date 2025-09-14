@@ -1,0 +1,50 @@
+@media only screen and (min-width: 38rem) {
+
+    /* Container constraint for larger screens */
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0;
+    }
+
+    /************************* HEADER ***************************/
+
+
+    header {
+        grid-template-columns: 24px 1fr; /** auto;**/
+        padding: 10px 20px;
+    }
+
+    header span {
+        font-size: 1.3rem;
+    }
+
+    /* Hide hamburger menu on larger screens */
+   .hamburger {
+        display: none;
+   } 
+
+   /************************* NAVIGATION ***************************/
+   .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+        background-color: #3D405B;
+        margin: 0;
+   }
+
+   .navigation ul {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+   }
+
+   .navigation li {
+        border-bottom: none;
+        border-right: 1px solid #555;
+    }
+
+   .navigation a {
+        display: none;
+   }
+
+}
