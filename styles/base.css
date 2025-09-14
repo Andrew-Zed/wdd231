@@ -6,8 +6,6 @@
     dark gray #ddd
 */
 
-
-
 /************************* SITE WIDE ***************************/
 * {
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
@@ -41,8 +39,8 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 24px; /**caveat**/
-    padding: 5px; /**5**/
+    max-width: 24px;
+    padding: 5px;
 }
 
 header span {
@@ -56,7 +54,7 @@ header span {
 
 /************************* HAMBURGER NAVIGATION ***************************/
 .hamburger {
-    background-color: none;
+    background: none;
     border: none;
     font-size: 2rem;
     color: #3D405B;
@@ -83,7 +81,6 @@ header span {
 
 .hamburger.show::before {
    content: "\00D7"; 
-   /* font-size: 2rem; */
 }
 
 /************************* NAVIGATION ***************************/
@@ -111,7 +108,6 @@ header span {
     padding: .8rem 10px;
     color: #3D405B;
     text-decoration: none;
-    /* border-bottom: solid 1px #ddd; */
     font-weight: 500;
     transition: all 0.3s ease;
 }
@@ -128,14 +124,12 @@ header span {
 }
 
 /************************* MAIN CONTENT ***************************/
-
 main {
     padding: 1rem 10px;
     max-width: 100%;
 }
 
 h1 {
-    /* margin-left: 10px; */
     color: #3D405B;
     font-size: 1.8rem;
     font-weight: 700;
@@ -143,13 +137,12 @@ h1 {
 }
 
 h2 {
-    color: #3D405B;
+    color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
     margin: 1.5rem 0 0.75rem 0;
     padding: 0.5rem 10px;
     background-color: #3D405B;
-    color: #fff;
     border-radius: 4px;
 }
 
@@ -161,7 +154,6 @@ p {
     margin: 0.75rem 0;
     line-height: 1.6;
 }
-
 
 /************************* ABOUT ME SECTION ***************************/
 .about-me {
@@ -179,7 +171,6 @@ p {
     text-align: justify;
 }
 
-
 /************************* STUDENT PHOTO SECTION ***************************/
 .student-photo {
     background-color: #f8f8f8;
@@ -188,7 +179,6 @@ p {
     border: 1px solid #eee;
     text-align: center;
 }
-
 
 .student-photo h2 {
     margin-top: 0;
@@ -201,26 +191,23 @@ p {
     margin: 1rem auto;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #ccc; /* Placeholder background */
+    background-color: #ccc;
     min-height: 200px;
     width: 100%;
     max-width: 300px;
 }
 
-
-
-
-
-
 /************************* COURSES SECTION ***************************/
-.courses-section {
+.courses-section,
+.courses-selection {
     background-color: #f8f8f8;
     padding: 1rem;
     border-radius: 6px;
     border: 1px solid #eee;
 }
 
-.courses-section h2 {
+.courses-section h2,
+.courses-selection h2 {
     margin-top: 0;
 }
 
@@ -293,6 +280,11 @@ p {
     font-weight: 600;
 }
 
+.course-name {
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
 .course-card .course-credits {
     color: #666;
     font-size: 0.9rem;
@@ -326,7 +318,6 @@ p {
     border: 1px solid #ddd;
 }
 
-
 /************************* FOOTER ***************************/
 footer {
     background-color: #eee;
@@ -339,7 +330,6 @@ footer {
 .social {
     display: flex;
     justify-content: center;
-    /* column-gap: 8px; */
     gap: 8px;
     margin-bottom: 1rem;
 }
@@ -350,11 +340,9 @@ footer {
     align-items: center;
     width: 44px;
     height: 44px;
-    /* border: red dashed 1px; */
     border: 2px solid #3D405B;
     border-radius: 22px;
     transition: all 0.3s ease;
-    /* background-color: #fff; */
 }
 
 .social img {
@@ -366,15 +354,6 @@ footer {
 .social a:hover {
     background-color: #ddd;
 }
-
-/* .social a:hover,
-.social a:focus {
-    background-color: #3D405B;
-    transform: translateY(-2px);
-    outline: 2px solid #E07A5F;
-    outline-offset: 2px;
-} */
-
 
 .social a:hover img,
 .social a:focus img {
