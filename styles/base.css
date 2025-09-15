@@ -399,7 +399,7 @@ button:focus {
 }
 
 /* High contrast mode improvements */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
     .course-type {
         background-color: #000 !important;
         color: #fff !important;
