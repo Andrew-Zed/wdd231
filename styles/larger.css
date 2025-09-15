@@ -199,7 +199,7 @@
 }
 
 /* High contrast mode support */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
     .course-card {
         border-width: 2px;
     }
