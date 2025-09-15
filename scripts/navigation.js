@@ -1,5 +1,3 @@
-
-// Responsive Navigation System
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
 });
@@ -14,6 +12,9 @@ function initializeNavigation() {
         console.error('Navigation elements not found');
         return;
     }
+    
+    // Set initial accessibility state based on screen size
+    setInitialAccessibilityState(navButton, navLinks);
     
     // Set up click event listener
     navButton.addEventListener('click', function() {
@@ -41,6 +42,9 @@ function initializeNavigation() {
     
     // Handle window resize
     window.addEventListener('resize', function() {
+        // Update accessibility state on resize
+        setInitialAccessibilityState(navButton, navLinks);
+        
         // Close mobile navigation if window becomes large
         if (window.innerWidth >= 608) {
             closeNavigation(navButton, navLinks);
@@ -56,6 +60,28 @@ function initializeNavigation() {
     });
 }
 
+// Set initial accessibility state based on screen size
+function setInitialAccessibilityState(navButton, navLinks) {
+    if (window.innerWidth >= 608) {
+        // Desktop: navigation is always visible
+        navLinks.removeAttribute('aria-hidden');
+        navButton.setAttribute('aria-expanded', 'false');
+        // Make sure links are focusable on desktop
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.removeAttribute('tabindex');
+        });
+    } else {
+        // Mobile: navigation is hidden by default
+        navLinks.setAttribute('aria-hidden', 'true');
+        navButton.setAttribute('aria-expanded', 'false');
+        // Make links non-focusable when hidden
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.setAttribute('tabindex', '-1');
+        });
+    }
+}
 
 // Toggle navigation menu
 function toggleNavigation(navButton, navLinks) {
@@ -77,13 +103,18 @@ function openNavigation(navButton, navLinks) {
     navButton.setAttribute('aria-expanded', 'true');
     navLinks.setAttribute('aria-hidden', 'false');
     
+    // Make links focusable when navigation is open
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(link => {
+        link.removeAttribute('tabindex');
+    });
+    
     // Focus first navigation link
     const firstLink = navLinks.querySelector('a');
     if (firstLink) {
         firstLink.focus();
     }
 }
-
 
 // Close navigation menu
 function closeNavigation(navButton, navLinks) {
@@ -92,16 +123,25 @@ function closeNavigation(navButton, navLinks) {
     
     // Update ARIA attributes for accessibility
     navButton.setAttribute('aria-expanded', 'false');
-    navLinks.setAttribute('aria-hidden', 'true');
+    
+    // Only set aria-hidden on mobile
+    if (window.innerWidth < 608) {
+        navLinks.setAttribute('aria-hidden', 'true');
+        // Make links non-focusable when hidden
+        const links = navLinks.querySelectorAll('a');
+        links.forEach(link => {
+            link.setAttribute('tabindex', '-1');
+        });
+    }
 }
 
-
+// Export for testing purposes (if needed)
 if (typeof module !== 'undefined' && module.exports) {
     module.exports = {
         initializeNavigation,
         toggleNavigation,
         openNavigation,
-        closeNavigation
+        closeNavigation,
+        setInitialAccessibilityState
     };
 }
-
