@@ -1,0 +1,90 @@
+/* Medium view - starting at 768px */
+@media screen and (min-width: 768px) {
+    /* Header */
+    .site-name h1 {
+        font-size: 1.8rem;
+    }
+    
+    .site-name p {
+        font-size: 1rem;
+    }
+    
+    /* Navigation */
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    #primaryNav {
+        display: flex;
+        justify-content: space-around;
+        max-width: var(--max-width);
+        margin: 0 auto;
+    }
+    
+    #primaryNav li {
+        border-bottom: none;
+        flex: 1 1 auto;
+    }
+    
+    #primaryNav a {
+        padding: 1rem 0.5rem;
+    }
+    
+    /* Directory */
+    #directory.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: var(--max-width);
+        margin: 0 auto 1.5rem;
+    }
+    
+    .footer-logo {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .footer-title {
+        text-align: left;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Join Page */
+    .join-main .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .join-main .modal-content {
+        margin: 10% auto;
+        max-width: 600px;
+    }
+    
+    /* Thank You Page */
+    .thankyou-main .details-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .thankyou-main .actions {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+/* Hide social icons on mobile */
+@media screen and (max-width: 767px) {
+    .header-right .social-icons {
+        display: none;
+    }
+}

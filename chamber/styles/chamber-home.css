@@ -1,0 +1,313 @@
+/* Home Page Specific Styles | chamber-home.css file */
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-container {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0D2642;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Grid Layout */
+.home-main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Content Sections - Common Styles */
+.events-section,
+.weather-section,
+.spotlights-section {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.dark-mode .events-section,
+.dark-mode .weather-section,
+.dark-mode .spotlights-section {
+    background-color: var(--primary-color);
+}
+
+/* Section Headers */
+.events-section h2,
+.weather-section h2,
+.spotlights-section h2,
+.form-section h3,
+.membership-cards h3 {
+    color: #0D2642;
+    font-weight: 700;
+    /* margin-bottom: 1rem; */
+    /* border-bottom: 2px solid var(--light-color);
+    padding-bottom: 0.5rem; */
+}
+
+.dark-mode .events-section h2,
+.dark-mode .weather-section h2,
+.dark-mode .spotlights-section h2,
+.dark-mode .form-section h3,
+.dark-mode .membership-cards h3 {
+    color: #FFFFFF;
+}
+
+/* Event Section */
+.event-card {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.event-card:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.event-card h3 {
+    color: #3D6E8A;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.dark-mode .event-card h3 {
+    color: #A3C5EE;
+    /* Lightened color for dark mode */
+}
+
+.event-card p {
+    margin: 0.3rem 0;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #D12836;
+}
+
+.dark-mode .event-date {
+    color: #F47983;
+    /* Lightened for dark mode */
+}
+
+/* Weather Section */
+.current-weather {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+}
+
+.weather-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.weather-data p {
+    margin: 0.25rem 0;
+}
+
+.forecast h3 {
+    margin: 1rem 0;
+    color: var(--secondary-color);
+}
+
+#forecast-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.forecast-day {
+    background-color: var(--background-color);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.forecast-day p {
+    margin: 0.25rem 0;
+}
+
+.forecast-day p:first-child {
+    font-weight: bold;
+}
+
+/* Spotlights Section */
+#spotlights-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.spotlight-logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: var(--shadow);
+}
+
+.spotlight-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.spotlight-info {
+    width: 100%;
+    text-align: center;
+}
+
+.spotlight-info h3 {
+    margin-bottom: 0.5rem;
+    color: #0D2642;
+    font-weight: 700;
+}
+
+.dark-mode .spotlight-info h3 {
+    color: #FFFFFF;
+    /* White for maximum contrast in dark mode */
+}
+
+.spotlight-info p {
+    margin: 0.25rem 0;
+}
+
+.spotlight-info .tagline {
+    font-style: italic;
+    margin-bottom: 0.75rem;
+}
+
+.membership-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.membership-badge.gold {
+    background-color: #D4B31C;
+    color: #000000;
+}
+
+.membership-badge.silver {
+    background-color: #9A9A9A;
+    color: #000000;
+}
+
+
+main>h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+/* Medium Screens */
+@media screen and (min-width: 768px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .events-section {
+        grid-column: 1 / -1;
+    }
+
+    #spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1024px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .events-section {
+        grid-column: 1 / span 2;
+    }
+
+    .weather-section {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1;
+    }
+
+    #spotlights-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
