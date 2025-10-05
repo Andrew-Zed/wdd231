@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application for Membership through our online form.">
+    <meta name="author" content="Andrew C. Awadike">
+
+    <!-- Facebook Open Graph meta tags -->
+    <meta property="og:title" content="Application For Membership | Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://andrew-zed.github.io/wdd231/chamber/images/timbuktu-hero-image.webp">
+    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Discover local businesses in Timbuktu. Join our Chamber of Commerce to network and grow.">
+
+    <title>Application for Membership | Chamber of Commerce</title>
+
+    <!-- Google Font Here - Single consolidated link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Style Sheets Here  -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-home.css">
+
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+
+  <body>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/tk-image.png" alt="Timbuktu Chamber of Commerce Logo">
+                <div class="site-name">
+                    <h2>Timbuktu</h2>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+            <div class="header-right">
+
+                <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌓</button>
+                <button id="hamburgerBtn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            </div>
+        </div>
+        <nav>
+            <ul id="primaryNav">
+                <li class="active"><a href="#" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                 <li><a href="#">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main class="home-main">
+        <h1>Application For Membership</h1>
+    </main>
+    <footer>
+      <div class="social">
+        <a
+          href="https://github.com/Andrew-Zed"
+          target="_blank"
+          aria-label="GitHub profile"
+        >
+          <img
+            src="../images/github.svg"
+            alt="GitHub address"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/andrew-awadike-661665101/"
+          target="_blank"
+          aria-label="LinkedIn profile"
+        >
+          <img
+            src="../images/linkedin.svg"
+            alt="LinkedIn"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          aria-label="Facebook profile"
+        >
+          <img
+            src="../images/facebook.svg"
+            alt="Facebook"
+            width="16"
+            height="16"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/andrewawadyke/"
+          target="_blank"
+          aria-label="Instagram profile"
+        >
+          <img
+            src="../images/instagram.svg"
+            alt="Instagram"
+            width="16"
+            height="16"
+        /></a>
+      </div>
+      <p>
+        &copy; <span id="currentyear"></span> &bull; Andrew Awadike &bull;
+        Lagos, Nigeria
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+   <script src="scripts/weather.js" defer></script>
+   <script src="scripts/spotlight.js" defer></script>
+   <script src="scripts/chamber.js" defer></script>
+  </body>
+</html>
