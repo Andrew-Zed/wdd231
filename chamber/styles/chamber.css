@@ -1,20 +1,26 @@
 /* CSS Variables with improved color contrast chamber.css*/
 :root {
     --primary-color: #1D3557;
-    --secondary-color: #2B5D80; /* Darkened for better contrast */
+    --secondary-color: #2B5D80;
+    /* Darkened for better contrast */
     --background-color: #F1FAEE;
     --text-color: #1D3557;
-    --accent-color: #D02B3B; /* Darkened from #E63946 for better contrast */
-    --light-color: #6AAFB4; /* Darkened from #A8DADC for better contrast */
+    --accent-color: #D02B3B;
+    /* Darkened from #E63946 for better contrast */
+    --light-color: #6AAFB4;
+    /* Darkened from #A8DADC for better contrast */
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     --border-radius: 5px;
-    --max-width: 1200px;
+    --max-width: 95%;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 
-    --secondary-color-accessible: #2B5D80; /* Darkened for better contrast */
-    --light-color-accessible: #6AAFB4; /* Darkened for better contrast */
-    --footer-link-color: #FFD166; /* Yellow for footer links */
+    --secondary-color-accessible: #2B5D80;
+    /* Darkened for better contrast */
+    --light-color-accessible: #6AAFB4;
+    /* Darkened for better contrast */
+    --footer-link-color: #FFD166;
+    /* Yellow for footer links */
 }
 
 /* Dark mode variables with improved contrast */
@@ -24,9 +30,12 @@
     --background-color: hsla(300, 1%, 15%, 0.933);
     --text-color: #F1FAEE;
     --light-color: #468D93;
-    --secondary-color-accessible: #FFFFFF; /* White text for links in dark mode */
-    --light-color-accessible: #4A70A0; /* Darker version for active nav */
-    --accent-color: #FF6B6B; /* Brighter for dark mode */
+    --secondary-color-accessible: #FFFFFF;
+    /* White text for links in dark mode */
+    --light-color-accessible: #4A70A0;
+    /* Darker version for active nav */
+    --accent-color: #FF6B6B;
+    /* Brighter for dark mode */
 }
 
 /* Global Styles */
@@ -43,7 +52,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     margin-bottom: 1rem;
 }
@@ -91,10 +105,10 @@ header {
     border-radius: 50%;
 }
 
-.site-title {
+.site-title p {
     color: #FFFFFF;
     margin: 0;
-  }
+}
 
 .site-name h1 {
     font-size: 1.5rem;
@@ -115,6 +129,7 @@ header {
     display: flex;
     gap: 0.5rem;
 }
+
 @media screen and (max-width: 767px) {
     .social-icons {
         display: none;
@@ -266,7 +281,8 @@ nav {
 .card h3 {
     margin-top: 0;
     color: var(--primary-color);
-    font-size: 1.25rem; /* Making headers larger for better readability */
+    font-size: 1.25rem;
+    /* Making headers larger for better readability */
     font-weight: 700;
 }
 
@@ -311,12 +327,12 @@ nav {
 }
 
 .card-link a {
-   background-color: #3D6E8A;
-   color: white;
-   font-weight: bold;
-   padding: 0.4rem 0.8rem;
-   border-radius: var(--border-radius);
-   display: inline-block;
+    background-color: #3D6E8A;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--border-radius);
+    display: inline-block;
 }
 
 .card-link a:hover {
