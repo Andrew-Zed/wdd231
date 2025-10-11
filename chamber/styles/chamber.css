@@ -11,7 +11,8 @@
     /* Darkened from #A8DADC for better contrast */
     --shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     --border-radius: 5px;
-    --max-width: 95%;
+    --max-width: 1200px;
+    --body-max-width: 95%;
     --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Open Sans', sans-serif;
 
@@ -89,7 +90,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max-width);
+    max-width: var(--body-max-width);
     margin: 0 auto;
 }
 
