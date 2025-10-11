@@ -21,7 +21,7 @@
 .dark-mode {
     --primary-color: #93B5E1;
     --secondary-color: #6997C5;
-    --background-color: #121212;
+    --background-color: hsla(300, 1%, 15%, 0.933);
     --text-color: #F1FAEE;
     --light-color: #468D93;
     --secondary-color-accessible: #FFFFFF; /* White text for links in dark mode */

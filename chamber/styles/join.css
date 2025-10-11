@@ -136,7 +136,7 @@ textarea {
 }
 
 .dark-mode .submit-btn {
-    background-color: var(--secondary-color);
+    background-color: #4A70A0;
     /* Change button color in dark mode */
 }
 

@@ -1,4 +1,4 @@
-/* Thank You Page Styles * thankyou.css/
+/* Thank You Page Styles * thankyou.css */
 
 .thankyou-main {
     max-width: var(--max-width);
@@ -112,7 +112,7 @@
 }
 
 .dark-mode .next-steps a {
-    color: var(--light-color); /* Change link color in dark mode */
+    color: var(--light-color);    
 }
 
 .actions {
