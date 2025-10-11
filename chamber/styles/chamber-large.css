@@ -26,10 +26,14 @@
     /* Navigation */
     #primaryNav {
         gap: 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
     }
 
     #primaryNav a {
-        padding: 1.2rem 1rem;
+        padding: 1.2rem 3rem;
     }
 
     /* Directory */

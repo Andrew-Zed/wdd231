@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Set common page elements
     updateFooterInfo();
 
+    // Set up wayfinding navigation
+    setupWayfinding();
+
     // Page-specific functionality
     initializeCurrentPage();
 });
@@ -73,6 +76,46 @@ function updateFooterInfo() {
     if (lastModifiedSpan) {
         lastModifiedSpan.textContent = document.lastModified;
     }
+}
+
+// Setup wayfinding - dynamically highlight current page in navigation
+function setupWayfinding() {
+    const primaryNav = document.getElementById('primaryNav');
+    if (!primaryNav) return;
+
+    // Get the current page filename
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+
+    // Get all navigation links
+    const navLinks = primaryNav.querySelectorAll('a');
+
+    // Remove active class from all links
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+    });
+
+    // Add active class and aria-current to the matching link
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        
+        // Handle different page matching scenarios
+        let isCurrentPage = false;
+
+        if (currentPage === 'index.html' || currentPage === '' || currentPage === '/') {
+            // Home page
+            isCurrentPage = href === '#' || href === '/' || href === 'index.html';
+        } else {
+            // Other pages - match the filename
+            isCurrentPage = href === currentPage || href.includes(currentPage);
+        }
+
+        if (isCurrentPage) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
 }
 
 // Setup modal functionality
