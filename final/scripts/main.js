@@ -42,9 +42,9 @@ function updateLastVisit() {
     const currentVisit = new Date().toLocaleString();
 
     if (lastVisit) {
-        console.log(`Welcome back! Last visit: ${lastVisit}`);
+        // console.log(`Welcome back! Last visit: ${lastVisit}`);
     } else {
-        console.log('Welcome to Nigerian Arts & Culture Portal!');
+        // console.log('Welcome to Nigerian Arts & Culture Portal!');
     }
 
     // Store current visit

@@ -158,7 +158,7 @@ function trackArtistViews() {
     const pageViewKey = 'artists_page_views';
     const currentViews = parseInt(getVisitData(pageViewKey) || '0') + 1;
     storeVisitData(pageViewKey, currentViews.toString());
-    console.log(`Artists page viewed ${currentViews} time(s)`);
+    // console.log(`Artists page viewed ${currentViews} time(s)`);
 }
 
 // Display error message

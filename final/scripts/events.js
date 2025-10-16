@@ -114,7 +114,7 @@ function trackEventClick(eventId) {
     const clickKey = `event_click_${eventId}`;
     const clicks = parseInt(getVisitData(clickKey) || '0') + 1;
     storeVisitData(clickKey, clicks.toString());
-    console.log(`Event ${eventId} clicked ${clicks} time(s)`);
+    // console.log(`Event ${eventId} clicked ${clicks} time(s)`);
 }
 
 // Track events page views
@@ -122,7 +122,7 @@ function trackEventPageView() {
     const pageViewKey = 'events_page_views';
     const currentViews = parseInt(getVisitData(pageViewKey) || '0') + 1;
     storeVisitData(pageViewKey, currentViews.toString());
-    console.log(`Events page viewed ${currentViews} time(s)`);
+    // console.log(`Events page viewed ${currentViews} time(s)`);
 }
 
 // Display error message
