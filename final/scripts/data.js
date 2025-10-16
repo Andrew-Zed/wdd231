@@ -28,7 +28,7 @@ function getFallbackArtists() {
             bio: "Contemporary artist known for exploring cultural identity, colonialism, and post-colonialism through sculpture, painting, photography, and film.",
             yearsActive: "1980-Present",
             notable: "Turner Prize nominee",
-            "image": "../images/Yinka-Shonibare.webp"
+            image: "../images/Yinka-Shonibare.webp"
         },
         {
             id: 2,
@@ -39,7 +39,7 @@ function getFallbackArtists() {
             bio: "Grammy-winning artist blending African music with global influences, creating the Afrofusion genre.",
             yearsActive: "2010-Present",
             notable: "Grammy Award Winner 2021",
-            "image": "../images/burna-boy.webp"
+            image: "../images/burna-boy.webp"
         },
         {
             id: 3,
@@ -50,7 +50,7 @@ function getFallbackArtists() {
             bio: "Internationally acclaimed author known for powerful narratives exploring identity, feminism, and Nigerian culture.",
             yearsActive: "2003-Present",
             notable: "MacArthur Fellowship 2008",
-            "image": "../images/Chimamanda-Ngozi-Adichie.webp"
+            image: "../images/Chimamanda-Ngozi-Adichie.webp"
         },
         {
             id: 4,
@@ -61,7 +61,7 @@ function getFallbackArtists() {
             bio: "Award-winning actress and filmmaker, pioneer in Nollywood's international recognition.",
             yearsActive: "1998-Present",
             notable: "First Netflix Original African Film",
-            "image": "../images/Genevieve-Nnaji.webp"
+            image: "../images/Genevieve-Nnaji.webp"
         },
         {
             id: 5,
@@ -72,7 +72,7 @@ function getFallbackArtists() {
             bio: "Pioneer of modern African art, known for merging European modernism with African aesthetics.",
             yearsActive: "1944-1994",
             notable: "Tutu Portrait Discovery 2018",
-            "image": "../images/Ben-Enwonwu.webp"
+            image: "../images/Ben-Enwonwu.webp"
         },
         {
             id: 6,
@@ -83,7 +83,7 @@ function getFallbackArtists() {
             bio: "Global Afrobeats superstar, collaborating with international artists and bringing Nigerian music to worldwide audiences.",
             yearsActive: "2009-Present",
             notable: "Grammy Award Winner 2021",
-            "image": "../images/wizkid.webp"
+            image: "../images/wizkid.webp"
         },
         {
             id: 7,
@@ -94,7 +94,7 @@ function getFallbackArtists() {
             bio: "Nobel Prize laureate in literature, first African to receive the honor, known for plays incorporating Yoruba traditions.",
             yearsActive: "1957-Present",
             notable: "Nobel Prize 1986",
-            "image": "../images/Wole-Soyinka.webp"
+            image: "../images/Wole-Soyinka.webp"
         },
         {
             id: 8,
@@ -105,7 +105,7 @@ function getFallbackArtists() {
             bio: "Director of blockbuster films transforming Nollywood with high production values and compelling storytelling.",
             yearsActive: "2008-Present",
             notable: "King of Boys Franchise",
-            "image": "../images/Kemi-Adetiba.webp"
+            image: "../images/Kemi-Adetiba.webp"
         },
         {
             id: 9,
@@ -116,7 +116,7 @@ function getFallbackArtists() {
             bio: "Contemporary painter creating large-scale works exploring Nigerian diaspora experience through mixed media.",
             yearsActive: "2004-Present",
             notable: "MacArthur Fellowship 2017",
-            "image": "../images/Njideka-Akunyili-Crosby.webp"
+            image: "../images/Njideka-Akunyili-Crosby.webp"
         },
         {
             id: 10,
@@ -127,7 +127,7 @@ function getFallbackArtists() {
             bio: "Queen of Afrobeats, pioneering female artist in African music with international collaborations.",
             yearsActive: "2006-Present",
             notable: "MTV Africa Music Awards",
-            "image": "../images/Tiwa-Savage.webp"
+            image: "images/Tiwa-Savage.webp"
         },
         {
             id: 11,
@@ -138,7 +138,7 @@ function getFallbackArtists() {
             bio: "Author of Things Fall Apart, one of the most widely read African novels, exploring colonialism's impact.",
             yearsActive: "1958-2013",
             notable: "Man Booker International Prize",
-            "image": "../images/Chinua-Achebe.webp"
+            image: "images/Chinua-Achebe.webp"
         },
         {
             id: 12,
@@ -149,7 +149,7 @@ function getFallbackArtists() {
             bio: "Award-winning filmmaker known for critically acclaimed films showcasing Nigerian culture and history.",
             yearsActive: "2005-Present",
             notable: "Multiple AMVCA Awards",
-            "image": "../images/Kunle-Afolayan.webp"
+            image: "images/Kunle-Afolayan.webp"
         },
         {
             id: 13,
@@ -160,7 +160,7 @@ function getFallbackArtists() {
             bio: "Multidisciplinary artist working across painting, sculpture, and installation, exploring gender and cultural themes.",
             yearsActive: "2000-Present",
             notable: "Venice Biennale 2017",
-            "image": "../images/Peju-Alatise.webp"
+            image: "images/Peju-Alatise.webp"
         },
         {
             id: 14,
@@ -171,7 +171,7 @@ function getFallbackArtists() {
             bio: "International Afrobeats star known for hit songs and collaborations with global artists.",
             yearsActive: "2011-Present",
             notable: "BET Awards Winner",
-            "image": "../images/Davido.webp"
+            image: "images/Davido.webp"
         },
         {
             id: 15,
@@ -182,7 +182,7 @@ function getFallbackArtists() {
             bio: "Pioneering female African writer addressing gender roles, feminism, and social issues in Nigerian society.",
             yearsActive: "1972-2017",
             notable: "Order of the British Empire",
-            "image": "../images/Buchi-Emecheta.webp"
+            image: "images/Buchi-Emecheta.webp"
         },
         {
             id: 16,
@@ -193,7 +193,7 @@ function getFallbackArtists() {
             bio: "Nollywood icon with decades of memorable performances and recent transition to directing.",
             yearsActive: "1993-Present",
             notable: "Living in Bondage: Breaking Free",
-            "image": "../images/Ramsey-Nouah.webp"
+            image: "images/Ramsey-Nouah.webp"
         }
     ];
 }

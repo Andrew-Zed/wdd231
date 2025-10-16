@@ -29,7 +29,7 @@ async function loadArtists() {
 // Display artists using template literals and DOM manipulation
 function displayArtists(artists) {
     const grid = document.getElementById('artists-grid');
-    
+
     if (artists.length === 0) {
         grid.innerHTML = '<p class="loading">No artists found in this category.</p>';
         return;
@@ -37,12 +37,10 @@ function displayArtists(artists) {
 
     // Use map() array method to create HTML for each artist
     const artistCards = artists.map(artist => {
-        const initials = artist.name.split(' ').map(n => n[0]).join('');
-        
         // Template literal for artist card HTML
         return `
             <article class="artist-card" data-category="${artist.category}">
-                <div class="artist-image">${initials}</div>
+                <img src="${artist.image}" alt="${artist.name}" class="artist-image">
                 <div class="artist-content">
                     <h3>${artist.name}</h3>
                     <span class="artist-category">${formatCategory(artist.category)}</span>
@@ -72,7 +70,7 @@ function displayArtists(artists) {
 // Initialize category filter
 function initializeFilters() {
     const filterSelect = document.getElementById('category-filter');
-    
+
     if (filterSelect) {
         filterSelect.addEventListener('change', (e) => {
             currentCategory = e.target.value;
@@ -119,7 +117,7 @@ function initializeModal() {
 // Show artist details in modal
 function showArtistModal(artistId) {
     const artist = allArtists.find(a => a.id === artistId);
-    
+
     if (!artist) return;
 
     const modal = document.getElementById('artist-modal');
