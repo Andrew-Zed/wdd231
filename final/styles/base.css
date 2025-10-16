@@ -272,6 +272,14 @@ footer {
 
     h2 {
         font-size: 2rem;
+        text-align: center;
+        color: var(--primary-color);
+        padding-top: 30px;
+    }
+
+    .hero-paragraph {
+        text-align: center;
+        color: var(--primary-color);
     }
 
     h3 {
