@@ -3,17 +3,17 @@
   <head>
    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Timbuktu Chamber of Commerce Business Directory to find local businesses and services. Connect with our vibrant community and discover networking opportunities.">
+    <meta name="description" content="Discover the rich history and cultural treasures of Timbuktu, Mali. Explore ancient mosques, manuscripts, and the legendary Sahara Desert.">
     <meta name="author" content="Andrew C. Awadike">
 
     <!-- Facebook Open Graph meta tags -->
-    <meta property="og:title" content="Timbuktu Chamber of Commerce - Business Directory">
+    <meta property="og:title" content="Discover Timbuktu - Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://andrew-zed.github.io/wdd231/chamber/images/timbuktu-hero-image.webp">
-    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/chamber/directory.html">
-    <meta property="og:description" content="Discover local businesses in Timbuktu. Join our Chamber of Commerce to network and grow.">
+    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/chamber/discover.html">
+    <meta property="og:description" content="Explore the ancient city of Timbuktu's rich cultural heritage and attractions">
 
-    <title>Timbuktu Chamber of Commerce - Discovery Page</title>
+    <title>Discover Timbuktu - Chamber of Commerce</title>
 
     <!-- Google Font Here - Single consolidated link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="stylesheet" href="styles/chamber-home.css">
+    <link rel="stylesheet" href="styles/discover.css">
 
     <link rel="icon" href="../favicon.ico" />
   </head>
@@ -47,9 +48,9 @@
         </div>
         <nav>
             <ul id="primaryNav">
-                <li class="active"><a href="#" aria-current="page">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                 <li><a href="#">Business Directory</a></li>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="discover.html" aria-current="page">Discover</a></li>
+                <li><a href="#">Business Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -58,72 +59,16 @@
     </header>
     
     <main class="home-main">
-        <h1>Timbuktu Chamber of Commerce</h1> 
-
-        <section class="hero-section">
-            <div class="hero-image">
-                <img src="images/timbuktu-hero-image.webp" alt="Timbuktu cityscape showing historic buildings and vibrant community">
-            </div>
-            <div class="cta-container">
-                <a href="join.html" class="cta-button">Become a Member</a>
-            </div>
+        <h1>Discover Timbuktu</h1>
+        
+        <!-- Visit Message Area -->
+        <div id="visit-message" class="visit-message"></div>
+        
+        <!-- Discover Section with Cards -->
+        <section id="discover-section">
+            <!-- Cards will be dynamically loaded here -->
         </section>
-
-        <div class="main-grid">
-            <!-- Events Section -->
-            <section class="events-section">
-                <h2>Upcoming Events</h2>
-                <div class="event-card">
-                    <h3>Business Networking Breakfast</h3>
-                    <p class="event-date">April 15, 2025 | 7:30 AM</p>
-                    <p>Join us for our monthly networking breakfast at the Grand Hotel. Meet fellow business owners and expand your professional network.</p>
-                </div>
-                <div class="event-card">
-                    <h3>Small Business Workshop</h3>
-                    <p class="event-date">April 22, 2025 | 1:00 PM</p>
-                    <p>Learn effective marketing strategies for small businesses in today's digital landscape.</p>
-                </div>
-                <div class="event-card">
-                    <h3>Annual Trade Fair</h3>
-                    <p class="event-date">May 5-7, 2025 | 9:00 AM - 5:00 PM</p>
-                    <p>Showcase your products and services at our largest yearly event. Register your booth by April 20.</p>
-                </div>
-            </section>
-
-            <!-- Weather Section -->
-            <section class="weather-section">
-                <h2>Weather Information</h2>
-                <div id="weather-container">
-                    <div class="current-weather">
-                        <div class="weather-icon">
-                            <img id="weather-icon" src="images/weather-placeholder.png" alt="Weather icon">
-                        </div>
-                        <div class="weather-data">
-                            <p id="temperature">Loading...</p>
-                            <p id="weather-description">Loading weather data</p>
-                            <p id="humidity">Humidity: --</p>
-                            <p id="wind-speed">Wind: -- mph</p>
-                        </div>
-                    </div>
-                    <div class="forecast">
-                        <h3>3-Day Forecast</h3>
-                        <div id="forecast-container">
-                            <p>Loading forecast data...</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Spotlights Section -->
-            <section class="spotlights-section">
-                <h2>Business Spotlights</h2>
-                <div id="spotlights-container">
-                    <!-- Business spotlights will be dynamically loaded here -->
-                    <!-- <p>Loading business spotlights...</p> -->
-                </div>
-            </section>
-        </div>
-
+        
     </main>
     <footer>
       <div class="social">
@@ -183,8 +128,9 @@
     </footer>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-   <script src="scripts/weather.js" defer></script>
-   <script src="scripts/spotlight.js" defer></script>
+   <!-- <script src="scripts/weather.js" defer></script>
+   <script src="scripts/spotlight.js" defer></script> -->
    <script src="scripts/chamber.js" defer></script>
+   <script src="scripts/discover.js" defer></script>
   </body>
 </html>

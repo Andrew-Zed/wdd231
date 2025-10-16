@@ -1,0 +1,208 @@
+/* Discover Page Styles - discover.css */
+
+/* Main Container */
+.discover-main {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.discover-main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0 2rem 0;
+    color: var(--primary-color);
+}
+
+/* Visit Message Styles */
+.visit-message {
+    background-color: var(--light-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    font-weight: 600;
+}
+
+.dark-mode .visit-message {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.visit-message p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+/* Small Screen Layout (320px to 640px) - Single Column */
+#discover-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "area-1"
+        "area-2"
+        "area-3"
+        "area-4"
+        "area-5"
+        "area-6"
+        "area-7"
+        "area-8";
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.discover-card {
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-mode .discover-card {
+    background-color: var(--primary-color);
+}
+
+.discover-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Grid area assignment */
+.discover-card[data-area="area-1"] { grid-area: area-1; }
+.discover-card[data-area="area-2"] { grid-area: area-2; }
+.discover-card[data-area="area-3"] { grid-area: area-3; }
+.discover-card[data-area="area-4"] { grid-area: area-4; }
+.discover-card[data-area="area-5"] { grid-area: area-5; }
+.discover-card[data-area="area-6"] { grid-area: area-6; }
+.discover-card[data-area="area-7"] { grid-area: area-7; }
+.discover-card[data-area="area-8"] { grid-area: area-8; }
+
+.discover-card h2 {
+    margin: 0 0 1rem 0;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dark-mode .discover-card h2 {
+    color: var(--text-color);
+}
+
+.discover-card figure {
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+/* NO hover effects on mobile (screens smaller than 641px) */
+@media screen and (max-width: 640px) {
+    .discover-card img:hover {
+        transform: none;
+        filter: none;
+        opacity: 1;
+    }
+}
+
+/* Hover effects for tablets and larger screens */
+@media screen and (min-width: 641px) {
+    .discover-card img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1) contrast(1.1);
+        opacity: 0.9;
+    }
+}
+
+.discover-card address {
+    font-style: italic;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.dark-mode .discover-card address {
+    color: var(--light-color);
+}
+
+.discover-card p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.learn-more-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.learn-more-btn:active {
+    transform: translateY(0);
+}
+
+/* Medium Screen Layout (641px to 1024px) - Two Columns */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #discover-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "area-1 area-2"
+            "area-3 area-4"
+            "area-5 area-6"
+            "area-7 area-8";
+        gap: 2rem;
+    }
+    
+    .discover-main h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Large Screen Layout (1025px and above) - Three Columns */
+@media screen and (min-width: 1025px) {
+    #discover-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "area-1 area-2 area-3"
+            "area-4 area-5 area-6"
+            "area-7 area-8 area-8";
+        gap: 2rem;
+    }
+    
+    .discover-main h1 {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+    
+    .visit-message {
+        font-size: 1.2rem;
+    }
+    
+    /* Make the last card span 1 column only on large screens */
+    .discover-card[data-area="area-8"] {
+        grid-area: area-8;
+    }
+}

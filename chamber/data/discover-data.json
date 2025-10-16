@@ -1,0 +1,60 @@
+{
+    "attractions": [
+      {
+        "id": 1,
+        "name": "Djinguereber Mosque",
+        "address": "Rue Askia Mohamed, Timbuktu, Mali",
+        "description": "Built in 1327 by the famous architect Es-Saheli, this UNESCO World Heritage site is one of three ancient mosques in Timbuktu. It showcases stunning Sudano-Sahelian architecture and has been a center of Islamic learning for centuries.",
+        "image": "images/discover/djinguereber-mosque.webp"
+      },
+      {
+        "id": 2,
+        "name": "Sankore Madrasah",
+        "address": "Quartier Sankore, Timbuktu, Mali",
+        "description": "An ancient center of learning that was part of the University of Timbuktu. This 14th-century madrasah was one of the most important institutions in medieval Africa, attracting scholars from across the Islamic world.",
+        "image": "images/discover/sankore-madrasah.webp"
+      },
+      {
+        "id": 3,
+        "name": "Timbuktu Manuscripts Library",
+        "address": "Avenue Askia Mohamed, Timbuktu, Mali",
+        "description": "Home to thousands of ancient manuscripts covering topics from astronomy to medicine. These invaluable documents showcase Timbuktu's rich intellectual heritage and the city's role as a major center of scholarship in medieval times.",
+        "image": "images/discover/manuscripts-library.webp"
+      },
+      {
+        "id": 4,
+        "name": "Sidi Yahya Mosque",
+        "address": "Place de l'Indépendance, Timbuktu, Mali",
+        "description": "The third of Timbuktu's great mosques, built in 1440. According to legend, one of its doors was to remain closed until the coming of a saint. The mosque features distinctive wooden beams and traditional mud-brick architecture.",
+        "image": "images/discover/sidi-yahya-mosque.webp"
+      },
+      {
+        "id": 5,
+        "name": "Niger River Port",
+        "address": "Port de Kabara, 8km south of Timbuktu, Mali",
+        "description": "The historic port of Kabara on the Niger River served as Timbuktu's gateway to the world. Today, visitors can take boat rides and witness traditional fishing methods while enjoying stunning sunsets over the river.",
+        "image": "images/discover/niger-river-port.webp"
+      },
+      {
+        "id": 6,
+        "name": "Grand Market",
+        "address": "Place du Grand Marché, Timbuktu, Mali",
+        "description": "A vibrant marketplace where locals and traders gather to sell spices, textiles, crafts, and traditional goods. The market has been a center of commerce for centuries and continues Timbuktu's trading legacy.",
+        "image": "images/discover/grand-market.webp"
+      },
+      {
+        "id": 7,
+        "name": "Sahara Desert Tours",
+        "address": "Various departure points, Timbuktu, Mali",
+        "description": "Experience the legendary Sahara Desert through camel treks and guided tours. Witness vast dunes, nomadic Tuareg camps, and spectacular starry nights. Tours range from day trips to multi-day expeditions.",
+        "image": "images/discover/sahara-tours.webp"
+      },
+      {
+        "id": 8,
+        "name": "Ahmed Baba Institute",
+        "address": "Route de Goundam, Timbuktu, Mali",
+        "description": "Named after the great 16th-century scholar, this modern research center preserves and studies ancient manuscripts. It houses over 20,000 manuscripts and offers visitors insight into Timbuktu's scholarly tradition.",
+        "image": "images/discover/ahmed-baba-institute.webp"
+      }
+    ]
+  }
