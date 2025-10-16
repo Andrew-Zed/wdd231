@@ -35,12 +35,10 @@ function displayArtists(artists) {
         return;
     }
 
-    // Use map() array method to create HTML for each artist
     const artistCards = artists.map(artist => {
-        // Template literal for artist card HTML
         return `
             <article class="artist-card" data-category="${artist.category}">
-                <img src="${artist.image}" alt="${artist.name}" class="artist-image">
+                <img src="https://andrew-zed.github.io/wdd231/final/${artist.image}" alt="${artist.name}" class="artist-image" loading="lazy">
                 <div class="artist-content">
                     <h3>${artist.name}</h3>
                     <span class="artist-category">${formatCategory(artist.category)}</span>
@@ -57,7 +55,6 @@ function displayArtists(artists) {
 
     grid.innerHTML = artistCards;
 
-    // Add event listeners to all "View Details" buttons
     const detailButtons = grid.querySelectorAll('.view-details-btn');
     detailButtons.forEach(button => {
         button.addEventListener('click', (e) => {
