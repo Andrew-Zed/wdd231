@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover talented Nigerian artists and their contributions to visual arts, music, literature, and more">
+    <meta name="author" content="Andrew C. Awadike">
+    <meta property="og:title" content="Nigerian Artists - NACP">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore profiles of Nigerian artists">
+    <title>Artists - Nigerian Arts & Culture Portal</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/artists.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <h1>Nigerian Arts & Culture Portal</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artists.html" class="active">Artists</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="hero-content">
+                <h2>Nigerian Artists</h2>
+                <p>Celebrating the creative minds shaping Nigerian art and culture</p>
+            </div>
+        </section>
+
+        <section class="artists-section">
+            <div class="container">
+                <div class="filter-controls">
+                    <label for="category-filter">Filter by Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="visual-arts">Visual Arts</option>
+                        <option value="music">Music</option>
+                        <option value="literature">Literature</option>
+                        <option value="film">Film</option>
+                    </select>
+                </div>
+
+                <div id="artists-grid" class="artists-grid">
+                    <p class="loading">Loading artists...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="artist-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nigerian Arts & Culture Portal. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="attributions.html">Attributions</a>
+                <a href="#video-demo">Video Demo</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/artists.js" type="module"></script>
+</body>
+</html>

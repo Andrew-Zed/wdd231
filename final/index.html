@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nigerian Arts & Culture Portal - Celebrating and preserving Nigeria's rich artistic and cultural heritage">
+    <meta name="author" content="Andrew C. Awadike">
+    <meta property="og:title" content="Nigerian Arts & Culture Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore Nigerian arts, culture, and heritage">
+    <meta property="og:url" content="https://yoursite.com">
+    <title>Home - Nigerian Arts & Culture Portal</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-title">
+                <h1>Nigerian Arts & Culture Portal</h1>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Celebrating Nigeria's Rich Artistic Heritage</h2>
+                <p>Discover the vibrant world of Nigerian arts, culture, and creative expression</p>
+                <a href="artists.html" class="cta-button">Explore Artists</a>
+            </div>
+        </section>
+
+        <section class="featured-content">
+            <div class="container">
+                <h2>Featured Categories</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h3>Visual Arts</h3>
+                        <p>Explore contemporary and traditional Nigerian visual arts including paintings, sculptures, and installations.</p>
+                        <a href="artists.html">View Artists</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Music & Performance</h3>
+                        <p>Discover the rhythms and melodies that define Nigerian musical traditions and modern innovations.</p>
+                        <a href="events.html">See Events</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Cultural Events</h3>
+                        <p>Stay connected with exhibitions, festivals, and cultural celebrations across Nigeria.</p>
+                        <a href="events.html">Browse Events</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Connected</h2>
+                <p>Subscribe to receive updates about Nigerian arts and cultural events</p>
+                <form id="newsletter-form" action="form-action.html" method="get">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">Area of Interest</label>
+                        <select id="interest" name="interest" required>
+                            <option value="">Select one</option>
+                            <option value="visual-arts">Visual Arts</option>
+                            <option value="music">Music</option>
+                            <option value="literature">Literature</option>
+                            <option value="film">Film</option>
+                            <option value="all">All Categories</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Nigerian Arts & Culture Portal. All rights reserved.</p>
+            <nav class="footer-nav">
+                <a href="attributions.html">Attributions</a>
+                <a href="#video-demo">Video Demo</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>
