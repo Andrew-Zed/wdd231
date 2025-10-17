@@ -24,6 +24,13 @@ body {
     background-color: var(--background-light);
 }
 
+.site-title {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.2;
@@ -312,10 +319,18 @@ footer {
         padding: 0.5rem 1rem;
         border-radius: 4px;
     }
+
+    .site-title {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1024px) {
     .logo-title h1 {
+        font-size: 1.75rem;
+    }
+
+    .site-title {
         font-size: 1.75rem;
     }
 }
