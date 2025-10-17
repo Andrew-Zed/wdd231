@@ -8,15 +8,15 @@
     <meta property="og:title" content="Nigerian Arts & Culture Portal">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Explore Nigerian arts, culture, and heritage">
-    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/final/index.html">
     <meta property="og:image" content="https://andrew-zed.github.io/wdd231/final/images/wizkid.webp">
+    <meta property="og:url" content="https://andrew-zed.github.io/wdd231/final/index.html">
     <title>Home - Nigerian Arts & Culture Portal</title>
     <link rel="icon" href="images/favicon.ico">
-
+    
     <!-- Google Font Here - Single consolidated link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -43,18 +43,19 @@
     </header>
 
     <main>
-        <!-- <h1>Home - Nigerian Arts & Culture Portal</h1> -->
+        <h1>Nigerian Arts & Culture Portal</h1>
+        
         <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-h1">Celebrating Nigeria's Rich Artistic Heritage</h1>
-                <p>Discover the vibrant world of Nigerian arts, culture, and creative expression</p>
+                <h2>Celebrating Nigerian Arts & Culture</h2>
+                <p>Discover the vibrant world of Nigerian creativity through our artists, events, and cultural heritage.</p>
                 <a href="artists.html" class="cta-button">Explore Artists</a>
             </div>
         </section>
 
         <section class="featured-content">
             <div class="container">
-                <h2>Featured Categories</h2>
+                <h2>Explore Our Collections</h2>
                 <div class="feature-grid">
                     <article class="feature-card">
                         <h3>Visual Arts</h3>
@@ -62,14 +63,14 @@
                         <a href="artists.html">View Artists</a>
                     </article>
                     <article class="feature-card">
-                        <h3>Music & Performance</h3>
-                        <p>Discover the rhythms and melodies that define Nigerian musical traditions and modern innovations.</p>
-                        <a href="events.html">See Events</a>
+                        <h3>Music</h3>
+                        <p>Discover the sounds of Nigeria from Afrobeats to traditional music and the artists shaping the global stage.</p>
+                        <a href="artists.html">View Artists</a>
                     </article>
                     <article class="feature-card">
                         <h3>Cultural Events</h3>
-                        <p>Stay connected with exhibitions, festivals, and cultural celebrations across Nigeria.</p>
-                        <a href="events.html">Browse Events</a>
+                        <p>Stay connected with upcoming exhibitions, performances, festivals, and cultural celebrations.</p>
+                        <a href="events.html">View Events</a>
                     </article>
                 </div>
             </div>
@@ -78,8 +79,8 @@
         <section class="newsletter">
             <div class="container">
                 <h2>Stay Connected</h2>
-                <p>Subscribe to receive updates about Nigerian arts and cultural events</p>
-                <form id="newsletter-form" action="../form-action.html" method="get">
+                <p>Subscribe to our newsletter for updates on Nigerian arts and culture</p>
+                <form action="thankyou.html" method="get">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="text" id="name" name="name" required>
@@ -89,9 +90,8 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="interest">Area of Interest</label>
-                        <select id="interest" name="interest" required>
-                            <option value="">Select one</option>
+                        <label for="interests">Interests</label>
+                        <select id="interests" name="interests">
                             <option value="visual-arts">Visual Arts</option>
                             <option value="music">Music</option>
                             <option value="literature">Literature</option>
