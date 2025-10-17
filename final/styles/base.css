@@ -273,8 +273,16 @@ footer {
 
 /* Tablet and Desktop Styles */
 @media screen and (min-width: 768px) {
+
+    .hero-h1 {
+        color: #ddd;
+    }
+
     h1 {
         font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30px;
+        color: var(--primary-color);
     }
 
     h2 {
